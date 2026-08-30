@@ -1,0 +1,601 @@
+Order ID,Order Date,Ship Date,Ship Mode,Customer ID,Customer Segment,Region,Category,Sub-Category,Product Name,Sales,Quantity,Discount,Profit
+ORD-1442,2021-01-01,2021-01-07,First Class,CUS-49286,Home Office,South,Technology,Phones,Motorola Droid,2998.85,7,0.3,-951.15
+ORD-1381,2021-01-02,2021-01-07,Same Day,CUS-34886,Home Office,West,Technology,Accessories,Belkin Cable,2897.1,10,0,746.69
+ORD-1065,2021-01-03,2021-01-05,First Class,CUS-81987,Corporate,West,Furniture,Chairs,Staples Fabric Chair,8789.74,10,0.3,-1448.57
+ORD-1518,2021-01-09,2021-01-12,Same Day,CUS-65586,Consumer,North,Clothing,Sportswear,Nike Dri-Fit Tee,7256.08,8,0,934.79
+ORD-1485,2021-01-11,2021-01-17,Standard Class,CUS-69302,Consumer,West,Furniture,Tables,Bevis Training Table,3399.76,7,0.3,-514.64
+ORD-1594,2021-01-11,2021-01-16,Second Class,CUS-23792,Corporate,West,Technology,Copiers,Brother Laser,2574.5,5,0,702.52
+ORD-1333,2021-01-14,2021-01-16,First Class,CUS-88908,Corporate,South,Technology,Copiers,Canon Imageclass,8341.79,9,0.05,380.09
+ORD-1448,2021-01-16,2021-01-21,Same Day,CUS-58310,Home Office,West,Technology,Machines,Swingline Trimmer,5725.61,9,0,1970.31
+ORD-1143,2021-01-17,2021-01-22,Second Class,CUS-57516,Corporate,North,Technology,Machines,Acco Punch,3770.39,7,0.2,-777.41
+ORD-1156,2021-01-19,2021-01-21,Same Day,CUS-45761,Home Office,East,Furniture,Furnishings,Tenex Mat,6782.8,8,0.3,-881.08
+ORD-1076,2021-01-20,2021-01-24,First Class,CUS-69878,Corporate,West,Technology,Accessories,Kensington Lock,8740.53,6,0.1,896.02
+ORD-1051,2021-01-21,2021-01-25,Same Day,CUS-12260,Consumer,South,Technology,Phones,Nokia Lumia,5517.51,9,0.3,-1079.26
+ORD-1307,2021-01-27,2021-02-02,First Class,CUS-29192,Consumer,North,Clothing,Outerwear,Columbia Jacket,307.88,1,0,106.39
+ORD-1283,2021-01-29,2021-01-30,Same Day,CUS-75973,Home Office,East,Technology,Accessories,Logitech Keyboard,1075.79,4,0.15,-65.34
+ORD-1174,2021-02-01,2021-02-06,First Class,CUS-47101,Consumer,South,Furniture,Tables,Chromcraft Table,6530.94,10,0.2,176.88
+ORD-1168,2021-02-02,2021-02-03,Same Day,CUS-67535,Consumer,South,Furniture,Bookcases,Bush Classic Bookcase,5604.64,8,0,818.72
+ORD-1336,2021-02-08,2021-02-15,Second Class,CUS-91685,Consumer,East,Technology,Phones,Nokia Lumia,1890.45,8,0.2,-109.22
+ORD-1464,2021-02-08,2021-02-13,Standard Class,CUS-77552,Consumer,West,Furniture,Bookcases,Realspace Bookcase,1001.16,5,0.15,99.36
+ORD-1515,2021-02-08,2021-02-11,Standard Class,CUS-18683,Corporate,West,Furniture,Chairs,Hon Office Chair,1313.15,1,0,271.37
+ORD-1029,2021-02-18,2021-02-25,First Class,CUS-13617,Corporate,South,Office Supplies,Binders,Wilson Jones Binder,2241.86,5,0.2,-81.9
+ORD-1035,2021-02-20,2021-02-24,Same Day,CUS-62383,Consumer,North,Clothing,Footwear,New Balance,7820.16,7,0.05,1555.85
+ORD-1468,2021-02-21,2021-02-22,Standard Class,CUS-54470,Corporate,South,Clothing,Footwear,Skechers Comfort,4592.44,8,0.3,-500.69
+ORD-1046,2021-02-22,2021-03-01,First Class,CUS-99687,Home Office,East,Clothing,Workwear,Dickies Pants,1416.51,2,0.05,46.06
+ORD-1189,2021-02-23,2021-03-01,Second Class,CUS-84967,Corporate,North,Furniture,Furnishings,Deflecto Barrier,441.15,1,0.2,-4.25
+ORD-1530,2021-02-25,2021-02-27,Second Class,CUS-94945,Corporate,East,Furniture,Tables,Bretford Table,4902.01,6,0,1267.34
+ORD-1050,2021-02-28,2021-03-05,First Class,CUS-82848,Corporate,West,Technology,Phones,Apple iPhone,6735.3,6,0.15,-468.05
+ORD-1295,2021-03-01,2021-03-02,Second Class,CUS-97797,Corporate,South,Clothing,Footwear,New Balance,914.7,8,0.1,97.73
+ORD-1186,2021-03-02,2021-03-07,Same Day,CUS-21232,Corporate,East,Clothing,Outerwear,Patagonia Vest,12718.15,9,0.2,-2160.19
+ORD-1097,2021-03-04,2021-03-07,Standard Class,CUS-16895,Home Office,North,Technology,Phones,Nokia Lumia,2810.43,8,0.15,-171.04
+ORD-1090,2021-03-05,2021-03-06,First Class,CUS-89730,Corporate,North,Clothing,Workwear,Carhartt Work Shirt,6961.05,8,0.3,-2437.46
+ORD-1014,2021-03-06,2021-03-10,Same Day,CUS-34957,Consumer,East,Technology,Machines,Swingline Trimmer,2251.6,4,0.3,-685.37
+ORD-1182,2021-03-06,2021-03-13,Same Day,CUS-94529,Corporate,North,Clothing,Workwear,Wrangler Jeans,1118.63,1,0,114.46
+ORD-1006,2021-03-07,2021-03-11,Same Day,CUS-94259,Corporate,East,Office Supplies,Appliances,Hoover Vacuum,14026.73,10,0.15,-1228.61
+ORD-1184,2021-03-09,2021-03-11,Same Day,CUS-98740,Corporate,South,Furniture,Chairs,Alera Mesh Chair,8700.2,7,0.1,-227.41
+ORD-1366,2021-03-13,2021-03-17,Same Day,CUS-78610,Corporate,East,Clothing,Workwear,Timberland Boots,7884.47,9,0,1888.52
+ORD-1073,2021-03-15,2021-03-21,First Class,CUS-13794,Consumer,North,Office Supplies,Art,Newell Pencils,9048.18,7,0,1807.76
+ORD-1239,2021-03-24,2021-03-27,Second Class,CUS-14073,Corporate,South,Technology,Accessories,Plantronics Headset,3747.1,6,0,984.89
+ORD-1311,2021-03-25,2021-03-31,Second Class,CUS-15235,Corporate,West,Office Supplies,Art,Dixon Ticonderoga,13962.81,10,0,2363.23
+ORD-1474,2021-03-25,2021-03-26,First Class,CUS-64555,Consumer,South,Clothing,Outerwear,Columbia Jacket,1085.52,8,0,139.43
+ORD-1520,2021-03-25,2021-04-01,Same Day,CUS-39605,Corporate,North,Clothing,Footwear,New Balance,3703.26,5,0.1,427.74
+ORD-1026,2021-03-27,2021-04-03,Same Day,CUS-91351,Corporate,East,Furniture,Furnishings,Eldon Shelf,4333.23,4,0.15,284.4
+ORD-1541,2021-03-28,2021-04-01,First Class,CUS-98037,Consumer,West,Furniture,Bookcases,Atlantic Bookcase,4123.1,10,0,1332.4
+ORD-1263,2021-03-29,2021-04-03,Same Day,CUS-82358,Consumer,West,Clothing,Outerwear,North Face Parka,3638.98,10,0,376.63
+ORD-1335,2021-03-30,2021-04-01,Same Day,CUS-88558,Home Office,South,Technology,Copiers,Canon Imageclass,1767.58,10,0,264.66
+ORD-1565,2021-03-31,2021-04-05,Same Day,CUS-22130,Corporate,West,Technology,Copiers,Canon Imageclass,2877.74,5,0,808.14
+ORD-1074,2021-04-05,2021-04-12,Second Class,CUS-32280,Consumer,East,Office Supplies,Binders,Cardinal Binder,1460.96,7,0.2,-98.18
+ORD-1008,2021-04-07,2021-04-12,Standard Class,CUS-99166,Consumer,North,Technology,Phones,Samsung Galaxy,2634.97,7,0.3,-598.5
+ORD-1395,2021-04-11,2021-04-15,Same Day,CUS-95491,Corporate,West,Furniture,Tables,HON Conference Table,2655.35,3,0.3,-581.5
+ORD-1344,2021-04-17,2021-04-20,Second Class,CUS-58606,Corporate,South,Furniture,Bookcases,Sauder Bookcase,8810.91,8,0.2,-1728.72
+ORD-1280,2021-04-21,2021-04-28,Second Class,CUS-20592,Consumer,South,Technology,Machines,Swingline Trimmer,7160.53,10,0.3,-2372.49
+ORD-1055,2021-04-22,2021-04-25,Second Class,CUS-16734,Home Office,East,Technology,Phones,Samsung Galaxy,507.06,1,0.3,-122.07
+ORD-1258,2021-04-22,2021-04-24,First Class,CUS-20739,Consumer,East,Clothing,Footwear,Skechers Comfort,7228.53,10,0,628.51
+ORD-1413,2021-04-22,2021-04-25,Same Day,CUS-13265,Corporate,South,Clothing,Footwear,Nike Running Shoes,3503.23,3,0,652.05
+ORD-1546,2021-04-22,2021-04-26,Standard Class,CUS-61508,Corporate,South,Clothing,Sportswear,Adidas Track Pants,1560.77,2,0.05,369.22
+ORD-1135,2021-04-24,2021-04-29,First Class,CUS-20336,Home Office,North,Technology,Machines,GBC Binding Sys,1122.02,3,0.05,110.44
+ORD-1469,2021-04-25,2021-05-02,Second Class,CUS-85936,Home Office,East,Furniture,Tables,Bevis Training Table,2793.65,4,0.3,-324.55
+ORD-1529,2021-04-25,2021-04-27,First Class,CUS-55727,Corporate,West,Clothing,Workwear,Timberland Boots,2856.64,5,0,683.95
+ORD-1590,2021-04-29,2021-05-04,Second Class,CUS-62944,Corporate,East,Clothing,Sportswear,Adidas Track Pants,497.75,6,0.1,86.14
+ORD-1246,2021-04-30,2021-05-07,Standard Class,CUS-38758,Home Office,West,Office Supplies,Art,Dixon Ticonderoga,568.14,2,0.05,43.73
+ORD-1422,2021-04-30,2021-05-05,First Class,CUS-27001,Home Office,North,Furniture,Tables,Bretford Table,4173.39,7,0.15,-312.55
+ORD-1178,2021-05-01,2021-05-03,Standard Class,CUS-38668,Consumer,North,Furniture,Bookcases,Realspace Bookcase,3194.33,3,0.05,74.59
+ORD-1211,2021-05-02,2021-05-07,Standard Class,CUS-27771,Home Office,East,Office Supplies,Art,BIC Pens,1756.75,5,0.1,328.77
+ORD-1378,2021-05-03,2021-05-07,Second Class,CUS-12798,Corporate,North,Technology,Accessories,Plantronics Headset,3088.11,8,0.15,223.86
+ORD-1058,2021-05-04,2021-05-08,Same Day,CUS-87832,Consumer,North,Technology,Machines,Fellowes Shredder,1075.29,3,0,131.47
+ORD-1019,2021-05-05,2021-05-06,Standard Class,CUS-98501,Consumer,East,Furniture,Tables,Chromcraft Table,1385.87,1,0,429.43
+ORD-1236,2021-05-08,2021-05-14,First Class,CUS-51688,Home Office,West,Technology,Copiers,Brother Laser,3671.93,5,0.2,-113.11
+ORD-1308,2021-05-08,2021-05-13,Same Day,CUS-41142,Consumer,East,Furniture,Furnishings,Deflecto Barrier,1729.44,2,0.05,355.32
+ORD-1462,2021-05-08,2021-05-10,Same Day,CUS-33388,Corporate,West,Office Supplies,Appliances,Avery Coffeemaker,1737.77,5,0,369.74
+ORD-1319,2021-05-10,2021-05-13,Same Day,CUS-59992,Home Office,North,Furniture,Furnishings,Advantus Panel,4017.85,5,0.1,376.76
+ORD-1549,2021-05-16,2021-05-23,Second Class,CUS-10403,Corporate,East,Office Supplies,Envelopes,Poly Envelope,1228.62,1,0,307.33
+ORD-1490,2021-05-18,2021-05-25,Second Class,CUS-52003,Consumer,South,Office Supplies,Art,Newell Pencils,6483.47,8,0.05,1350.88
+ORD-1318,2021-05-25,2021-05-26,Standard Class,CUS-94072,Corporate,South,Clothing,Workwear,Wrangler Jeans,4737.28,7,0,877.18
+ORD-1134,2021-06-01,2021-06-03,Same Day,CUS-75911,Corporate,South,Furniture,Tables,HON Conference Table,4959.42,9,0,1424.85
+ORD-1196,2021-06-01,2021-06-08,Standard Class,CUS-24335,Home Office,West,Clothing,Workwear,Wrangler Jeans,630.05,9,0.15,28.0
+ORD-1256,2021-06-03,2021-06-04,First Class,CUS-36941,Corporate,North,Clothing,Footwear,New Balance,2568.56,3,0.2,-456.13
+ORD-1105,2021-06-04,2021-06-10,First Class,CUS-29786,Home Office,South,Clothing,Workwear,Wrangler Jeans,5418.52,10,0.15,478.71
+ORD-1104,2021-06-06,2021-06-08,Second Class,CUS-95918,Home Office,North,Technology,Machines,Acco Punch,902.39,3,0,134.56
+ORD-1262,2021-06-11,2021-06-18,Second Class,CUS-26539,Home Office,West,Furniture,Chairs,Hon Office Chair,1776.51,8,0,608.43
+ORD-1298,2021-06-11,2021-06-12,Standard Class,CUS-62879,Corporate,West,Clothing,Footwear,New Balance,3160.57,8,0.3,-533.46
+ORD-1345,2021-06-13,2021-06-17,Standard Class,CUS-36438,Home Office,North,Clothing,Workwear,Timberland Boots,1085.37,10,0,274.47
+ORD-1039,2021-06-15,2021-06-19,Same Day,CUS-18161,Consumer,South,Technology,Phones,Apple iPhone,376.54,4,0.2,-49.2
+ORD-1489,2021-06-15,2021-06-18,First Class,CUS-32972,Home Office,East,Furniture,Furnishings,Advantus Panel,700.29,2,0.3,-142.04
+ORD-1340,2021-06-21,2021-06-22,Standard Class,CUS-59155,Home Office,East,Clothing,Sportswear,Nike Dri-Fit Tee,882.83,1,0,208.4
+ORD-1454,2021-06-22,2021-06-24,Second Class,CUS-85727,Home Office,South,Technology,Phones,Nokia Lumia,1280.56,7,0.3,-222.79
+ORD-1522,2021-06-24,2021-06-29,Same Day,CUS-26090,Consumer,North,Clothing,Workwear,Carhartt Work Shirt,390.05,3,0.05,37.61
+ORD-1121,2021-06-25,2021-06-26,First Class,CUS-18855,Consumer,East,Furniture,Tables,HON Conference Table,796.64,1,0.15,-60.95
+ORD-1504,2021-06-26,2021-06-30,First Class,CUS-64331,Consumer,South,Office Supplies,Envelopes,Kraft Envelope,1707.15,2,0.2,-334.8
+ORD-1575,2021-06-29,2021-07-01,Same Day,CUS-95016,Consumer,South,Furniture,Chairs,Hon Office Chair,767.52,1,0.05,181.85
+ORD-1103,2021-06-30,2021-07-02,First Class,CUS-32037,Consumer,West,Technology,Phones,Nokia Lumia,1194.48,9,0.1,156.92
+ORD-1282,2021-06-30,2021-07-05,Second Class,CUS-58903,Home Office,South,Clothing,Workwear,Wrangler Jeans,5246.09,7,0.2,-1147.53
+ORD-1476,2021-06-30,2021-07-07,Second Class,CUS-70845,Corporate,East,Clothing,Footwear,Adidas Sneakers,1155.24,4,0,285.47
+ORD-1253,2021-07-01,2021-07-02,Standard Class,CUS-16310,Corporate,East,Furniture,Furnishings,Eldon Shelf,4493.3,4,0.15,-340.15
+ORD-1268,2021-07-02,2021-07-04,Standard Class,CUS-50779,Corporate,South,Technology,Phones,Nokia Lumia,11640.38,9,0,2550.67
+ORD-1142,2021-07-04,2021-07-09,Same Day,CUS-47453,Home Office,West,Clothing,Outerwear,North Face Parka,4068.28,10,0,634.51
+ORD-1542,2021-07-04,2021-07-11,First Class,CUS-75070,Home Office,West,Technology,Copiers,Canon Imageclass,7984.77,10,0,1764.06
+ORD-1543,2021-07-04,2021-07-06,Second Class,CUS-24000,Home Office,South,Furniture,Furnishings,Tenex Mat,6887.42,10,0.05,1774.1
+ORD-1218,2021-07-06,2021-07-12,First Class,CUS-25806,Consumer,North,Technology,Phones,Samsung Galaxy,1692.61,3,0.3,-622.02
+ORD-1188,2021-07-07,2021-07-12,Same Day,CUS-23538,Corporate,North,Clothing,Sportswear,Adidas Track Pants,578.82,2,0,113.66
+ORD-1430,2021-07-09,2021-07-14,First Class,CUS-52904,Home Office,West,Furniture,Tables,Chromcraft Table,1102.39,4,0.3,-189.88
+ORD-1052,2021-07-10,2021-07-16,First Class,CUS-56112,Consumer,East,Clothing,Outerwear,Patagonia Vest,4838.61,10,0.15,-145.71
+ORD-1235,2021-07-10,2021-07-14,Standard Class,CUS-87580,Consumer,North,Clothing,Sportswear,Puma Tights,1579.35,2,0,398.07
+ORD-1217,2021-07-11,2021-07-18,Second Class,CUS-66260,Corporate,East,Furniture,Furnishings,Eldon Shelf,710.13,1,0.1,89.49
+ORD-1015,2021-07-13,2021-07-19,Standard Class,CUS-17944,Home Office,North,Clothing,Sportswear,Puma Tights,3842.43,7,0,1005.98
+ORD-1338,2021-07-17,2021-07-24,Same Day,CUS-78425,Corporate,South,Furniture,Bookcases,Bush Classic Bookcase,7986.02,8,0,2572.95
+ORD-1154,2021-07-25,2021-07-31,Standard Class,CUS-21725,Consumer,South,Technology,Phones,Nokia Lumia,5459.14,8,0.1,91.25
+ORD-1265,2021-07-26,2021-07-29,Same Day,CUS-28855,Home Office,East,Office Supplies,Envelopes,Kraft Envelope,4013.42,7,0.3,-1444.37
+ORD-1585,2021-07-28,2021-08-03,Same Day,CUS-76308,Home Office,North,Furniture,Chairs,Hon Office Chair,4105.15,4,0,1135.71
+ORD-1274,2021-07-29,2021-08-04,First Class,CUS-46291,Home Office,North,Office Supplies,Binders,Cardinal Binder,960.06,2,0.15,116.99
+ORD-1372,2021-07-29,2021-08-01,Same Day,CUS-50838,Corporate,East,Technology,Phones,Samsung Galaxy,959.25,4,0,204.58
+ORD-1512,2021-07-29,2021-07-31,Standard Class,CUS-72851,Consumer,South,Technology,Copiers,Canon Imageclass,3854.11,7,0,429.63
+ORD-1116,2021-07-30,2021-07-31,Second Class,CUS-69130,Corporate,North,Furniture,Chairs,Staples Fabric Chair,12482.21,8,0,3799.37
+ORD-1353,2021-08-07,2021-08-12,First Class,CUS-74330,Consumer,North,Clothing,Footwear,Nike Running Shoes,3567.03,8,0.15,-43.05
+ORD-1088,2021-08-14,2021-08-16,Same Day,CUS-78955,Consumer,North,Furniture,Furnishings,Eldon Shelf,4645.71,10,0,704.52
+ORD-1480,2021-08-14,2021-08-19,Same Day,CUS-17122,Consumer,East,Furniture,Chairs,Flash Chair,2197.29,4,0.05,54.61
+ORD-1120,2021-08-16,2021-08-20,Second Class,CUS-97080,Home Office,West,Furniture,Chairs,Alera Mesh Chair,2062.04,5,0.15,-165.06
+ORD-1000,2021-08-17,2021-08-18,Standard Class,CUS-22280,Home Office,North,Office Supplies,Art,Dixon Ticonderoga,2515.92,3,0,602.39
+ORD-1500,2021-08-19,2021-08-20,First Class,CUS-17213,Consumer,West,Technology,Accessories,Belkin Cable,510.59,1,0.05,64.03
+ORD-1449,2021-08-20,2021-08-26,Standard Class,CUS-99662,Home Office,West,Furniture,Chairs,Staples Fabric Chair,4601.67,8,0,672.82
+ORD-1089,2021-08-21,2021-08-28,First Class,CUS-70036,Corporate,North,Clothing,Sportswear,Champion Shorts,7200.5,8,0,1989.9
+ORD-1130,2021-08-21,2021-08-23,First Class,CUS-74382,Home Office,North,Technology,Phones,Nokia Lumia,1404.32,9,0.1,168.65
+ORD-1315,2021-08-21,2021-08-24,Second Class,CUS-51984,Corporate,West,Office Supplies,Appliances,Avery Coffeemaker,8369.37,9,0.3,-1996.62
+ORD-1204,2021-08-22,2021-08-24,First Class,CUS-25328,Corporate,East,Clothing,Outerwear,Patagonia Vest,11367.62,10,0,1870.66
+ORD-1009,2021-08-23,2021-08-29,First Class,CUS-75612,Home Office,East,Office Supplies,Appliances,Avery Coffeemaker,1655.63,7,0,558.83
+ORD-1060,2021-08-24,2021-08-31,First Class,CUS-67560,Home Office,South,Technology,Machines,GBC Binding Sys,172.36,2,0.1,15.63
+ORD-1030,2021-08-25,2021-08-30,Standard Class,CUS-60488,Consumer,East,Office Supplies,Appliances,Holmes Heater,5607.43,10,0.15,-152.37
+ORD-1292,2021-08-26,2021-08-29,Standard Class,CUS-58840,Consumer,North,Furniture,Chairs,Alera Mesh Chair,2130.54,6,0.3,-238.89
+ORD-1350,2021-08-27,2021-08-28,First Class,CUS-42539,Consumer,East,Clothing,Outerwear,North Face Parka,3208.65,6,0.15,-17.79
+ORD-1433,2021-08-29,2021-09-01,First Class,CUS-45527,Consumer,East,Technology,Machines,Fellowes Shredder,1382.45,1,0,187.7
+ORD-1160,2021-08-31,2021-09-02,Second Class,CUS-27507,Corporate,West,Technology,Phones,Motorola Droid,1927.56,2,0.1,56.36
+ORD-1334,2021-08-31,2021-09-04,Standard Class,CUS-41938,Corporate,South,Office Supplies,Appliances,Sanyo Microwave,5936.64,8,0,1512.42
+ORD-1393,2021-09-04,2021-09-06,First Class,CUS-75850,Home Office,South,Furniture,Tables,Bevis Training Table,2241.15,5,0.15,1.75
+ORD-1047,2021-09-05,2021-09-12,Same Day,CUS-23833,Corporate,North,Clothing,Sportswear,Champion Shorts,10227.46,9,0,3164.23
+ORD-1238,2021-09-05,2021-09-11,First Class,CUS-89076,Consumer,East,Clothing,Sportswear,Puma Tights,6182.13,5,0,757.66
+ORD-1302,2021-09-05,2021-09-12,Standard Class,CUS-69048,Consumer,West,Clothing,Outerwear,Patagonia Vest,1933.52,2,0,638.43
+ORD-1564,2021-09-07,2021-09-10,Standard Class,CUS-53178,Corporate,West,Furniture,Furnishings,Eldon Shelf,136.85,1,0.3,-33.86
+ORD-1061,2021-09-12,2021-09-13,Same Day,CUS-52247,Home Office,West,Office Supplies,Envelopes,Kraft Envelope,3772.75,9,0.3,-1313.98
+ORD-1216,2021-09-12,2021-09-15,Second Class,CUS-45916,Corporate,South,Clothing,Footwear,New Balance,5903.54,4,0,1878.39
+ORD-1482,2021-09-18,2021-09-25,First Class,CUS-38816,Home Office,North,Furniture,Furnishings,Eldon Shelf,1347.48,2,0.3,-346.41
+ORD-1383,2021-09-23,2021-09-28,First Class,CUS-16433,Consumer,South,Technology,Accessories,Kensington Lock,497.24,4,0.2,-21.06
+ORD-1066,2021-09-26,2021-09-27,Same Day,CUS-22217,Corporate,East,Clothing,Footwear,Nike Running Shoes,15119.69,10,0,2478.16
+ORD-1294,2021-09-29,2021-10-06,First Class,CUS-90131,Consumer,North,Furniture,Tables,HON Conference Table,9131.67,10,0,2237.78
+ORD-1166,2021-09-30,2021-10-04,Same Day,CUS-79721,Consumer,East,Technology,Phones,Apple iPhone,4848.22,4,0,1668.72
+ORD-1037,2021-10-01,2021-10-05,Same Day,CUS-43972,Home Office,West,Office Supplies,Envelopes,Mead Envelope,4520.7,9,0,1269.35
+ORD-1528,2021-10-03,2021-10-10,Second Class,CUS-76412,Home Office,East,Clothing,Workwear,Carhartt Work Shirt,5899.63,10,0.3,-1424.78
+ORD-1084,2021-10-05,2021-10-08,Standard Class,CUS-58566,Corporate,West,Office Supplies,Envelopes,Staples Envelope,5371.94,7,0.3,-1094.66
+ORD-1192,2021-10-05,2021-10-12,Second Class,CUS-49378,Consumer,East,Clothing,Sportswear,Puma Tights,3204.04,6,0.2,0.57
+ORD-1371,2021-10-07,2021-10-08,Standard Class,CUS-34371,Consumer,East,Clothing,Workwear,Timberland Boots,6281.11,10,0.15,-877.87
+ORD-1079,2021-10-08,2021-10-11,First Class,CUS-64460,Home Office,North,Furniture,Furnishings,Deflecto Barrier,669.94,1,0,69.9
+ORD-1434,2021-10-17,2021-10-18,Second Class,CUS-13800,Home Office,East,Technology,Copiers,Canon Imageclass,3274.02,5,0.15,3.13
+ORD-1213,2021-10-19,2021-10-25,First Class,CUS-58374,Home Office,East,Clothing,Workwear,Wrangler Jeans,1588.49,2,0,299.86
+ORD-1431,2021-10-21,2021-10-22,Standard Class,CUS-53684,Home Office,North,Technology,Copiers,Canon Imageclass,3708.03,8,0,300.76
+ORD-1416,2021-10-24,2021-10-26,Standard Class,CUS-27245,Home Office,South,Furniture,Tables,Bretford Table,2514.48,5,0.3,-734.3
+ORD-1406,2021-10-25,2021-11-01,First Class,CUS-64269,Corporate,South,Furniture,Bookcases,Sauder Bookcase,7524.49,6,0,2079.1
+ORD-1576,2021-10-25,2021-10-27,Second Class,CUS-68361,Corporate,South,Technology,Accessories,Belkin Cable,1741.97,8,0.2,-372.97
+ORD-1091,2021-10-31,2021-11-04,Standard Class,CUS-24996,Consumer,North,Office Supplies,Binders,Ibico Binder,5083.08,10,0.3,-1186.91
+ORD-1171,2021-11-02,2021-11-03,Same Day,CUS-64592,Corporate,East,Technology,Phones,Apple iPhone,2470.08,4,0,735.0
+ORD-1071,2021-11-08,2021-11-10,Same Day,CUS-95823,Consumer,West,Technology,Machines,Fellowes Shredder,968.25,8,0.3,-354.24
+ORD-1093,2021-11-09,2021-11-14,Standard Class,CUS-86869,Consumer,West,Furniture,Bookcases,Bush Classic Bookcase,1006.15,7,0.15,74.63
+ORD-1129,2021-11-11,2021-11-17,First Class,CUS-42717,Corporate,West,Office Supplies,Envelopes,Poly Envelope,2417.37,10,0.15,-90.73
+ORD-1312,2021-11-11,2021-11-14,Second Class,CUS-34100,Home Office,East,Furniture,Furnishings,Deflecto Barrier,6963.38,10,0,2031.14
+ORD-1497,2021-11-11,2021-11-13,Standard Class,CUS-97235,Consumer,South,Furniture,Bookcases,Atlantic Bookcase,1671.05,10,0.1,49.82
+ORD-1567,2021-11-12,2021-11-17,Second Class,CUS-74175,Corporate,North,Clothing,Workwear,Timberland Boots,2874.01,10,0,875.58
+ORD-1027,2021-11-13,2021-11-17,Second Class,CUS-44970,Consumer,South,Technology,Phones,Samsung Galaxy,2173.1,3,0.15,143.96
+ORD-1072,2021-11-13,2021-11-19,Same Day,CUS-80912,Corporate,North,Office Supplies,Binders,Ibico Binder,2355.56,2,0.2,88.61
+ORD-1098,2021-11-15,2021-11-19,First Class,CUS-38255,Home Office,South,Furniture,Bookcases,Atlantic Bookcase,3668.38,8,0.3,-756.01
+ORD-1582,2021-11-17,2021-11-20,First Class,CUS-56798,Consumer,West,Clothing,Workwear,Timberland Boots,1221.56,4,0,427.3
+ORD-1598,2021-11-18,2021-11-19,First Class,CUS-49967,Consumer,East,Clothing,Footwear,Nike Running Shoes,5094.21,6,0,1126.58
+ORD-1583,2021-11-21,2021-11-23,Same Day,CUS-43793,Home Office,South,Furniture,Bookcases,Atlantic Bookcase,972.29,7,0.05,36.54
+ORD-1028,2021-11-23,2021-11-30,Second Class,CUS-39219,Corporate,North,Furniture,Tables,Chromcraft Table,3960.25,4,0.3,-1091.41
+ORD-1141,2021-11-24,2021-11-27,Same Day,CUS-13037,Home Office,East,Office Supplies,Art,Dixon Ticonderoga,6827.92,8,0.3,-1606.85
+ORD-1597,2021-11-30,2021-12-04,Same Day,CUS-14273,Home Office,South,Technology,Phones,Nokia Lumia,2817.94,3,0,753.82
+ORD-1493,2021-12-04,2021-12-10,Second Class,CUS-72115,Consumer,East,Technology,Phones,Apple iPhone,3114.2,4,0,495.64
+ORD-1297,2021-12-05,2021-12-09,Same Day,CUS-40801,Corporate,North,Office Supplies,Art,BIC Pens,732.93,5,0.05,112.6
+ORD-1206,2021-12-08,2021-12-12,Second Class,CUS-35575,Corporate,West,Technology,Copiers,Brother Laser,7075.87,8,0.15,792.48
+ORD-1451,2021-12-10,2021-12-13,Standard Class,CUS-47593,Home Office,North,Office Supplies,Binders,Wilson Jones Binder,5347.17,8,0,1375.33
+ORD-1553,2021-12-12,2021-12-13,Standard Class,CUS-78922,Corporate,North,Clothing,Sportswear,Nike Dri-Fit Tee,3293.97,2,0,1105.97
+ORD-1438,2021-12-16,2021-12-21,Same Day,CUS-62535,Corporate,East,Technology,Accessories,Kensington Lock,1325.22,2,0,389.56
+ORD-1005,2021-12-17,2021-12-24,Standard Class,CUS-40021,Consumer,South,Clothing,Workwear,Timberland Boots,2198.84,9,0.15,181.56
+ORD-1471,2021-12-19,2021-12-24,Second Class,CUS-18271,Corporate,North,Furniture,Tables,Chromcraft Table,1766.78,10,0,195.81
+ORD-1473,2021-12-22,2021-12-26,Second Class,CUS-86282,Consumer,East,Furniture,Furnishings,Eldon Shelf,1736.87,7,0.15,7.68
+ORD-1201,2021-12-24,2021-12-28,Same Day,CUS-13826,Corporate,South,Clothing,Workwear,Dickies Pants,6693.17,7,0,1692.9
+ORD-1355,2021-12-24,2021-12-27,First Class,CUS-90318,Consumer,West,Clothing,Sportswear,Champion Shorts,693.18,1,0.2,-43.76
+ORD-1361,2021-12-24,2021-12-26,Second Class,CUS-93962,Corporate,East,Office Supplies,Envelopes,Mead Envelope,1370.95,2,0.1,75.69
+ORD-1453,2021-12-24,2021-12-31,Standard Class,CUS-54937,Home Office,South,Clothing,Sportswear,Nike Dri-Fit Tee,3643.49,5,0.05,495.25
+ORD-1075,2021-12-25,2021-12-29,First Class,CUS-97404,Home Office,North,Clothing,Outerwear,Under Armour Hoodie,1404.46,10,0.3,-277.75
+ORD-1505,2021-12-25,2022-01-01,First Class,CUS-86704,Home Office,West,Technology,Copiers,HP LaserJet,1674.44,7,0.3,-600.45
+ORD-1544,2021-12-25,2021-12-26,First Class,CUS-81531,Corporate,South,Clothing,Workwear,Timberland Boots,1200.01,10,0.15,52.68
+ORD-1080,2021-12-26,2021-12-29,First Class,CUS-25095,Consumer,South,Office Supplies,Binders,Avery Binder,3661.34,5,0.3,-398.38
+ORD-1479,2021-12-27,2022-01-02,First Class,CUS-40154,Consumer,South,Clothing,Footwear,Nike Running Shoes,2841.15,4,0.15,-90.5
+ORD-1306,2021-12-31,2022-01-07,First Class,CUS-65363,Home Office,East,Furniture,Furnishings,Deflecto Barrier,5762.87,10,0.2,-218.73
+ORD-1010,2022-01-01,2022-01-05,Standard Class,CUS-24662,Home Office,North,Office Supplies,Art,Dixon Ticonderoga,5199.84,6,0,1256.88
+ORD-1414,2022-01-02,2022-01-03,Standard Class,CUS-24963,Home Office,West,Technology,Phones,Samsung Galaxy,1886.24,5,0,516.76
+ORD-1063,2022-01-07,2022-01-14,Second Class,CUS-53228,Home Office,West,Clothing,Footwear,New Balance,2365.09,6,0.15,84.99
+ORD-1123,2022-01-09,2022-01-12,First Class,CUS-77552,Consumer,South,Clothing,Footwear,Skechers Comfort,362.36,4,0.05,88.48
+ORD-1572,2022-01-09,2022-01-13,First Class,CUS-54739,Consumer,West,Furniture,Tables,Bretford Table,3198.53,6,0.3,-529.4
+ORD-1205,2022-01-10,2022-01-14,Second Class,CUS-82733,Home Office,East,Technology,Phones,Nokia Lumia,1701.75,10,0.2,-180.01
+ORD-1278,2022-01-10,2022-01-13,First Class,CUS-44152,Home Office,East,Furniture,Chairs,Staples Fabric Chair,3326.25,4,0.1,144.78
+ORD-1354,2022-01-10,2022-01-11,First Class,CUS-61605,Corporate,East,Technology,Copiers,Canon Imageclass,9524.91,9,0.3,-1107.68
+ORD-1419,2022-01-14,2022-01-15,Standard Class,CUS-24272,Consumer,South,Office Supplies,Appliances,Hoover Vacuum,698.57,1,0.1,13.55
+ORD-1380,2022-01-18,2022-01-21,First Class,CUS-69517,Corporate,East,Clothing,Sportswear,Nike Dri-Fit Tee,1443.2,2,0.3,-418.77
+ORD-1573,2022-01-19,2022-01-20,Second Class,CUS-95957,Consumer,South,Furniture,Furnishings,Advantus Panel,4419.14,7,0,824.75
+ORD-1248,2022-01-21,2022-01-22,Same Day,CUS-10089,Home Office,West,Office Supplies,Art,Faber-Castell Markers,130.4,1,0.05,21.84
+ORD-1561,2022-01-22,2022-01-26,Standard Class,CUS-67870,Consumer,South,Technology,Copiers,Canon Imageclass,1858.05,8,0.3,-468.53
+ORD-1031,2022-01-25,2022-01-31,Standard Class,CUS-49363,Consumer,East,Clothing,Footwear,Adidas Sneakers,3341.47,6,0.15,77.7
+ORD-1257,2022-01-25,2022-02-01,Same Day,CUS-30131,Home Office,West,Office Supplies,Binders,Cardinal Binder,457.83,4,0.2,-30.04
+ORD-1352,2022-01-25,2022-02-01,First Class,CUS-30446,Home Office,West,Technology,Copiers,HP LaserJet,1220.07,5,0.05,281.15
+ORD-1467,2022-01-27,2022-01-29,Standard Class,CUS-35309,Home Office,East,Clothing,Footwear,Skechers Comfort,843.04,8,0.3,-144.55
+ORD-1157,2022-01-30,2022-02-04,Second Class,CUS-33002,Corporate,North,Technology,Phones,Motorola Droid,241.39,3,0.15,16.54
+ORD-1348,2022-02-03,2022-02-06,Standard Class,CUS-77277,Corporate,West,Furniture,Furnishings,Eldon Shelf,6040.42,7,0,1303.86
+ORD-1501,2022-02-04,2022-02-08,Second Class,CUS-74286,Corporate,South,Technology,Accessories,Logitech Keyboard,11413.65,9,0,3920.32
+ORD-1396,2022-02-06,2022-02-10,Same Day,CUS-57876,Consumer,South,Furniture,Furnishings,Deflecto Barrier,4773.46,6,0,526.91
+ORD-1327,2022-02-07,2022-02-09,Standard Class,CUS-82298,Home Office,East,Furniture,Bookcases,Bush Classic Bookcase,5701.66,9,0.2,-70.22
+ORD-1202,2022-02-09,2022-02-16,Second Class,CUS-57945,Home Office,West,Clothing,Workwear,Carhartt Work Shirt,1023.35,4,0,241.39
+ORD-1241,2022-02-10,2022-02-14,Second Class,CUS-22055,Corporate,West,Furniture,Furnishings,Advantus Panel,1551.87,1,0.05,385.91
+ORD-1289,2022-02-11,2022-02-17,Same Day,CUS-53332,Corporate,South,Technology,Machines,Swingline Trimmer,1013.32,5,0.3,-125.86
+ORD-1145,2022-02-12,2022-02-14,Second Class,CUS-52987,Home Office,West,Furniture,Bookcases,Bush Classic Bookcase,1631.78,3,0.3,-374.95
+ORD-1398,2022-02-13,2022-02-20,First Class,CUS-11800,Consumer,East,Furniture,Bookcases,Bush Classic Bookcase,5478.15,4,0,1723.22
+ORD-1131,2022-02-14,2022-02-20,Standard Class,CUS-82089,Consumer,North,Furniture,Tables,Chromcraft Table,8952.45,8,0.15,316.17
+ORD-1526,2022-02-18,2022-02-19,Same Day,CUS-25615,Home Office,East,Clothing,Workwear,Timberland Boots,4086.55,9,0,1377.97
+ORD-1310,2022-02-20,2022-02-22,Standard Class,CUS-59440,Consumer,West,Office Supplies,Art,Dixon Ticonderoga,2972.22,5,0,387.83
+ORD-1410,2022-02-20,2022-02-27,Standard Class,CUS-89682,Consumer,South,Technology,Phones,Nokia Lumia,5668.37,6,0.05,682.7
+ORD-1417,2022-02-20,2022-02-24,Second Class,CUS-38426,Home Office,North,Office Supplies,Appliances,Sanyo Microwave,7732.25,8,0,1887.87
+ORD-1472,2022-02-20,2022-02-27,Second Class,CUS-15975,Corporate,West,Clothing,Sportswear,Champion Shorts,7863.8,10,0.15,635.67
+ORD-1176,2022-02-21,2022-02-23,First Class,CUS-40149,Corporate,East,Clothing,Footwear,Adidas Sneakers,257.04,3,0.2,-36.06
+ORD-1226,2022-02-21,2022-02-22,Same Day,CUS-25202,Home Office,South,Office Supplies,Envelopes,Poly Envelope,3273.62,5,0.05,67.55
+ORD-1139,2022-02-22,2022-02-27,Standard Class,CUS-51827,Home Office,East,Technology,Machines,Acco Punch,7170.68,6,0,2046.37
+ORD-1100,2022-02-23,2022-02-25,Second Class,CUS-59834,Consumer,East,Technology,Machines,Acco Punch,947.43,6,0.3,-159.46
+ORD-1163,2022-02-25,2022-03-02,Same Day,CUS-98181,Consumer,West,Clothing,Footwear,New Balance,1411.72,3,0.3,-307.39
+ORD-1341,2022-02-25,2022-03-02,Same Day,CUS-84012,Corporate,East,Office Supplies,Appliances,Hoover Vacuum,7855.64,7,0.1,4.33
+ORD-1533,2022-02-26,2022-03-05,Standard Class,CUS-80232,Corporate,East,Office Supplies,Art,BIC Pens,10357.77,6,0.05,1441.56
+ORD-1040,2022-02-28,2022-03-07,Same Day,CUS-80545,Corporate,West,Furniture,Tables,HON Conference Table,1393.31,1,0.1,185.92
+ORD-1087,2022-03-01,2022-03-06,First Class,CUS-32871,Consumer,South,Office Supplies,Art,Newell Pencils,4926.54,5,0,1707.7
+ORD-1375,2022-03-03,2022-03-09,First Class,CUS-36047,Corporate,West,Office Supplies,Binders,Avery Binder,1237.28,1,0,183.61
+ORD-1477,2022-03-03,2022-03-04,Standard Class,CUS-94523,Consumer,East,Technology,Accessories,Plantronics Headset,5972.56,8,0,1558.47
+ORD-1195,2022-03-06,2022-03-08,Same Day,CUS-59412,Corporate,West,Furniture,Tables,HON Conference Table,3027.92,3,0.05,221.72
+ORD-1364,2022-03-08,2022-03-13,Standard Class,CUS-23622,Corporate,South,Furniture,Bookcases,Bush Classic Bookcase,6725.3,8,0,1937.91
+ORD-1519,2022-03-15,2022-03-18,First Class,CUS-83024,Corporate,South,Furniture,Furnishings,Advantus Panel,1747.41,8,0,373.72
+ORD-1534,2022-03-15,2022-03-20,Standard Class,CUS-87576,Corporate,East,Furniture,Furnishings,Deflecto Barrier,4793.93,4,0,1312.49
+ORD-1596,2022-03-16,2022-03-22,Same Day,CUS-64646,Consumer,West,Office Supplies,Envelopes,Mead Envelope,3032.19,5,0.2,148.75
+ORD-1092,2022-03-17,2022-03-20,First Class,CUS-59060,Corporate,West,Technology,Phones,Motorola Droid,5553.25,8,0,912.89
+ORD-1085,2022-03-21,2022-03-24,Second Class,CUS-26011,Corporate,West,Technology,Machines,Fellowes Shredder,4706.92,6,0.15,-605.55
+ORD-1460,2022-03-21,2022-03-27,Second Class,CUS-43205,Home Office,North,Furniture,Bookcases,Sauder Bookcase,5267.77,7,0,1695.8
+ORD-1045,2022-03-23,2022-03-25,First Class,CUS-24168,Home Office,West,Office Supplies,Binders,Avery Binder,6678.89,10,0,1936.9
+ORD-1001,2022-03-24,2022-03-25,Second Class,CUS-65392,Home Office,South,Furniture,Chairs,Flash Chair,1647.08,4,0.1,244.67
+ORD-1314,2022-03-24,2022-03-30,First Class,CUS-59987,Home Office,West,Furniture,Bookcases,Atlantic Bookcase,2213.97,8,0.05,584.27
+ORD-1330,2022-03-25,2022-04-01,First Class,CUS-60868,Consumer,West,Furniture,Furnishings,Tenex Mat,395.93,4,0.05,57.34
+ORD-1041,2022-03-28,2022-04-04,Same Day,CUS-26728,Consumer,West,Office Supplies,Envelopes,Mead Envelope,417.64,1,0.2,-10.22
+ORD-1370,2022-03-28,2022-04-04,Standard Class,CUS-33908,Consumer,East,Clothing,Outerwear,Patagonia Vest,4296.92,5,0.1,178.25
+ORD-1394,2022-03-29,2022-04-01,Standard Class,CUS-72371,Consumer,South,Clothing,Workwear,Carhartt Work Shirt,1662.05,4,0.2,-299.23
+ORD-1390,2022-03-31,2022-04-03,First Class,CUS-86304,Corporate,South,Furniture,Furnishings,Eldon Shelf,196.09,2,0.15,-20.17
+ORD-1514,2022-04-01,2022-04-08,Standard Class,CUS-20188,Home Office,South,Technology,Copiers,Brother Laser,705.72,3,0,137.4
+ORD-1232,2022-04-03,2022-04-05,First Class,CUS-83899,Corporate,North,Furniture,Tables,Bretford Table,2134.11,5,0.3,-785.03
+ORD-1044,2022-04-05,2022-04-09,Standard Class,CUS-83920,Home Office,North,Furniture,Bookcases,Sauder Bookcase,3796.52,4,0,548.24
+ORD-1067,2022-04-06,2022-04-10,Same Day,CUS-41946,Corporate,North,Furniture,Chairs,Flash Chair,4087.53,5,0.1,172.42
+ORD-1255,2022-04-07,2022-04-09,Same Day,CUS-31090,Corporate,South,Furniture,Bookcases,Atlantic Bookcase,514.41,1,0,51.46
+ORD-1272,2022-04-07,2022-04-08,Second Class,CUS-43081,Corporate,South,Clothing,Footwear,Nike Running Shoes,10850.64,8,0,2629.2
+ORD-1408,2022-04-18,2022-04-21,Second Class,CUS-60785,Consumer,South,Furniture,Furnishings,Advantus Panel,1086.34,8,0.3,-193.1
+ORD-1291,2022-04-19,2022-04-22,First Class,CUS-65836,Corporate,West,Office Supplies,Envelopes,Poly Envelope,2689.47,2,0,834.02
+ORD-1369,2022-04-19,2022-04-25,Same Day,CUS-59592,Home Office,North,Office Supplies,Art,Faber-Castell Markers,4418.2,9,0.05,216.86
+ORD-1386,2022-04-19,2022-04-26,First Class,CUS-98407,Consumer,West,Technology,Copiers,HP LaserJet,6891.5,9,0.2,-127.84
+ORD-1155,2022-04-21,2022-04-28,First Class,CUS-14910,Consumer,North,Clothing,Outerwear,Columbia Jacket,7362.39,7,0,2450.82
+ORD-1004,2022-04-22,2022-04-28,Standard Class,CUS-89840,Corporate,North,Office Supplies,Envelopes,Kraft Envelope,1938.75,3,0.05,360.51
+ORD-1523,2022-04-22,2022-04-27,First Class,CUS-29316,Home Office,West,Clothing,Sportswear,Adidas Track Pants,2296.64,7,0.2,107.1
+ORD-1470,2022-04-23,2022-04-29,Second Class,CUS-11882,Consumer,North,Technology,Phones,Samsung Galaxy,9620.65,8,0,1400.04
+ORD-1169,2022-04-25,2022-04-27,Second Class,CUS-64206,Consumer,South,Technology,Machines,GBC Binding Sys,3365.17,10,0.15,-272.7
+ORD-1290,2022-04-26,2022-04-27,First Class,CUS-94454,Consumer,North,Furniture,Bookcases,Realspace Bookcase,3768.15,3,0,1037.61
+ORD-1324,2022-04-26,2022-04-28,First Class,CUS-51462,Corporate,North,Furniture,Chairs,Staples Fabric Chair,5850.63,8,0.1,685.89
+ORD-1020,2022-04-27,2022-04-29,First Class,CUS-41285,Consumer,West,Technology,Accessories,Logitech Keyboard,5035.35,7,0.15,540.65
+ORD-1114,2022-05-02,2022-05-04,First Class,CUS-98907,Home Office,West,Office Supplies,Envelopes,Staples Envelope,1827.64,9,0.3,-230.15
+ORD-1538,2022-05-08,2022-05-15,Same Day,CUS-44987,Home Office,South,Office Supplies,Envelopes,Mead Envelope,5034.99,6,0,1264.59
+ORD-1140,2022-05-11,2022-05-18,Same Day,CUS-42541,Consumer,West,Office Supplies,Envelopes,Staples Envelope,457.38,3,0.1,84.73
+ORD-1458,2022-05-11,2022-05-12,Same Day,CUS-22805,Home Office,South,Office Supplies,Art,BIC Pens,451.78,9,0,137.59
+ORD-1148,2022-05-12,2022-05-14,Same Day,CUS-75774,Home Office,North,Furniture,Chairs,Hon Office Chair,3072.38,8,0,588.36
+ORD-1377,2022-05-13,2022-05-18,First Class,CUS-91937,Consumer,North,Clothing,Outerwear,Patagonia Vest,517.49,2,0.3,-178.7
+ORD-1036,2022-05-15,2022-05-17,Standard Class,CUS-69829,Home Office,South,Furniture,Bookcases,Realspace Bookcase,570.38,4,0.3,-203.31
+ORD-1038,2022-05-22,2022-05-25,First Class,CUS-80798,Home Office,East,Clothing,Outerwear,Patagonia Vest,1021.59,8,0.1,-6.83
+ORD-1013,2022-05-23,2022-05-24,Second Class,CUS-18834,Consumer,South,Office Supplies,Appliances,Hoover Vacuum,2880.87,10,0,781.05
+ORD-1057,2022-05-24,2022-05-28,First Class,CUS-84531,Home Office,North,Clothing,Outerwear,Under Armour Hoodie,7370.06,8,0.1,1195.76
+ORD-1197,2022-05-24,2022-05-29,Second Class,CUS-68429,Consumer,East,Furniture,Tables,Bretford Table,1443.42,7,0,216.31
+ORD-1391,2022-05-27,2022-06-03,Same Day,CUS-32662,Corporate,South,Office Supplies,Appliances,Sanyo Microwave,13653.72,10,0,3759.78
+ORD-1062,2022-05-28,2022-06-03,Same Day,CUS-46458,Consumer,North,Technology,Accessories,Belkin Cable,1058.93,10,0,219.24
+ORD-1374,2022-05-28,2022-06-03,Standard Class,CUS-78306,Consumer,West,Furniture,Chairs,Flash Chair,2807.59,8,0,375.6
+ORD-1136,2022-05-29,2022-06-03,Second Class,CUS-32439,Home Office,South,Office Supplies,Art,BIC Pens,5357.76,10,0,1284.73
+ORD-1056,2022-06-02,2022-06-09,First Class,CUS-21164,Consumer,West,Furniture,Tables,HON Conference Table,1498.51,2,0,181.27
+ORD-1558,2022-06-04,2022-06-09,Same Day,CUS-54456,Corporate,West,Clothing,Sportswear,Nike Dri-Fit Tee,1195.25,9,0,179.62
+ORD-1547,2022-06-08,2022-06-15,Same Day,CUS-14440,Consumer,East,Technology,Machines,GBC Binding Sys,3376.02,3,0.15,312.13
+ORD-1119,2022-06-09,2022-06-15,Same Day,CUS-18232,Consumer,South,Clothing,Footwear,Skechers Comfort,1506.03,4,0,217.44
+ORD-1349,2022-06-12,2022-06-17,Standard Class,CUS-73172,Home Office,East,Clothing,Workwear,Wrangler Jeans,2630.65,4,0.3,-489.22
+ORD-1437,2022-06-13,2022-06-16,Same Day,CUS-70455,Corporate,East,Technology,Machines,Acco Punch,7620.7,8,0,1587.7
+ORD-1356,2022-06-16,2022-06-20,Same Day,CUS-37594,Home Office,South,Office Supplies,Art,BIC Pens,6327.31,8,0.15,-292.32
+ORD-1328,2022-06-18,2022-06-23,Standard Class,CUS-62007,Home Office,West,Technology,Machines,Swingline Trimmer,3454.47,4,0.1,-116.94
+ORD-1275,2022-06-19,2022-06-25,Standard Class,CUS-95904,Consumer,East,Technology,Copiers,Canon Imageclass,5250.07,10,0.15,203.72
+ORD-1082,2022-06-21,2022-06-23,Standard Class,CUS-93283,Home Office,West,Office Supplies,Appliances,Hoover Vacuum,478.11,8,0.15,48.82
+ORD-1365,2022-06-22,2022-06-24,Second Class,CUS-13744,Consumer,South,Clothing,Sportswear,Nike Dri-Fit Tee,2389.3,4,0.3,-479.89
+ORD-1024,2022-06-25,2022-07-01,First Class,CUS-31178,Corporate,West,Furniture,Bookcases,Realspace Bookcase,584.18,5,0.15,36.92
+ORD-1021,2022-06-28,2022-06-30,First Class,CUS-27361,Consumer,West,Office Supplies,Envelopes,Kraft Envelope,127.5,2,0,12.72
+ORD-1096,2022-07-02,2022-07-06,Standard Class,CUS-28595,Consumer,North,Office Supplies,Binders,Cardinal Binder,376.34,6,0,87.65
+ORD-1181,2022-07-02,2022-07-09,Standard Class,CUS-95686,Consumer,West,Office Supplies,Envelopes,Mead Envelope,3288.65,10,0.05,282.8
+ORD-1173,2022-07-04,2022-07-11,First Class,CUS-49739,Home Office,West,Furniture,Bookcases,Sauder Bookcase,7486.32,10,0.05,1006.43
+ORD-1215,2022-07-04,2022-07-10,Same Day,CUS-12134,Corporate,East,Office Supplies,Art,Faber-Castell Markers,10092.68,6,0,932.61
+ORD-1153,2022-07-11,2022-07-15,First Class,CUS-71918,Consumer,South,Technology,Copiers,Canon Imageclass,2514.1,9,0.05,48.2
+ORD-1563,2022-07-13,2022-07-16,Standard Class,CUS-47261,Home Office,South,Furniture,Chairs,Flash Chair,376.55,2,0.3,-70.5
+ORD-1270,2022-07-16,2022-07-23,Same Day,CUS-86923,Corporate,East,Clothing,Footwear,Nike Running Shoes,2089.38,4,0.3,-672.89
+ORD-1548,2022-07-16,2022-07-22,First Class,CUS-76366,Corporate,North,Clothing,Workwear,Timberland Boots,10593.34,7,0,3205.42
+ORD-1208,2022-07-17,2022-07-18,Standard Class,CUS-45112,Home Office,South,Office Supplies,Art,Faber-Castell Markers,5109.27,10,0.3,-1132.08
+ORD-1222,2022-07-22,2022-07-25,Standard Class,CUS-41370,Consumer,North,Office Supplies,Appliances,Avery Coffeemaker,2697.82,4,0.05,558.23
+ORD-1484,2022-07-26,2022-07-31,Second Class,CUS-85196,Home Office,North,Clothing,Outerwear,North Face Parka,2927.95,6,0.05,719.67
+ORD-1404,2022-07-28,2022-08-02,Second Class,CUS-65897,Consumer,South,Office Supplies,Envelopes,Staples Envelope,1605.32,2,0.05,188.91
+ORD-1267,2022-07-29,2022-08-01,First Class,CUS-64627,Home Office,West,Furniture,Chairs,Alera Mesh Chair,3655.89,5,0.3,-588.64
+ORD-1069,2022-08-03,2022-08-08,Same Day,CUS-69682,Home Office,East,Clothing,Outerwear,Under Armour Hoodie,4736.36,9,0.15,19.03
+ORD-1180,2022-08-11,2022-08-16,First Class,CUS-56457,Home Office,North,Clothing,Outerwear,Columbia Jacket,1160.13,2,0.05,65.92
+ORD-1539,2022-08-11,2022-08-18,First Class,CUS-70838,Corporate,South,Technology,Phones,Apple iPhone,549.47,2,0,80.39
+ORD-1351,2022-08-12,2022-08-15,Second Class,CUS-99536,Corporate,North,Office Supplies,Appliances,Hoover Vacuum,4466.24,8,0.05,1100.77
+ORD-1507,2022-08-13,2022-08-14,First Class,CUS-86161,Consumer,West,Clothing,Outerwear,Columbia Jacket,1366.26,2,0.3,-138.72
+ORD-1580,2022-08-13,2022-08-20,Same Day,CUS-27191,Corporate,South,Office Supplies,Envelopes,Staples Envelope,2859.43,9,0.15,297.01
+ORD-1446,2022-08-14,2022-08-16,Standard Class,CUS-27985,Consumer,South,Furniture,Bookcases,Bush Classic Bookcase,1754.68,3,0.3,-337.53
+ORD-1144,2022-08-15,2022-08-18,First Class,CUS-28909,Corporate,North,Clothing,Sportswear,Champion Shorts,4020.06,3,0.2,-479.34
+ORD-1138,2022-08-17,2022-08-21,Same Day,CUS-70875,Corporate,East,Technology,Phones,Motorola Droid,1671.31,8,0,205.04
+ORD-1132,2022-08-18,2022-08-22,Standard Class,CUS-57303,Consumer,East,Technology,Machines,GBC Binding Sys,2838.97,2,0,408.58
+ORD-1152,2022-08-18,2022-08-23,First Class,CUS-83664,Corporate,North,Furniture,Furnishings,Deflecto Barrier,6177.37,5,0.05,367.91
+ORD-1510,2022-08-21,2022-08-28,First Class,CUS-45580,Home Office,North,Technology,Copiers,Canon Imageclass,7276.12,10,0.15,658.92
+ORD-1581,2022-08-24,2022-08-26,Second Class,CUS-36146,Corporate,West,Office Supplies,Envelopes,Staples Envelope,3935.16,10,0,1023.56
+ORD-1279,2022-08-26,2022-08-30,First Class,CUS-64146,Consumer,West,Clothing,Footwear,Nike Running Shoes,9011.86,8,0,2831.75
+ORD-1461,2022-08-27,2022-09-03,Standard Class,CUS-46344,Home Office,West,Furniture,Tables,Bretford Table,4492.87,7,0.15,-339.3
+ORD-1187,2022-08-28,2022-08-31,First Class,CUS-23965,Home Office,South,Furniture,Bookcases,Atlantic Bookcase,1179.76,3,0,329.99
+ORD-1483,2022-08-28,2022-08-30,Same Day,CUS-70655,Home Office,South,Technology,Copiers,Canon Imageclass,4097.29,7,0.3,-562.17
+ORD-1023,2022-09-06,2022-09-12,First Class,CUS-36685,Consumer,North,Office Supplies,Appliances,Holmes Heater,2038.3,9,0.1,190.18
+ORD-1200,2022-09-07,2022-09-13,Second Class,CUS-77632,Home Office,North,Furniture,Bookcases,Atlantic Bookcase,1549.69,2,0,513.07
+ORD-1359,2022-09-07,2022-09-13,Standard Class,CUS-68963,Home Office,East,Furniture,Tables,Bevis Training Table,327.84,3,0.1,19.23
+ORD-1170,2022-09-08,2022-09-11,Same Day,CUS-63511,Consumer,East,Technology,Phones,Nokia Lumia,1121.41,1,0.2,-8.78
+ORD-1570,2022-09-08,2022-09-13,Standard Class,CUS-76932,Consumer,South,Office Supplies,Art,Faber-Castell Markers,3343.13,5,0,1095.45
+ORD-1033,2022-09-09,2022-09-13,Second Class,CUS-77000,Home Office,West,Furniture,Furnishings,Tenex Mat,1651.89,4,0.15,-32.13
+ORD-1516,2022-09-10,2022-09-17,First Class,CUS-85989,Consumer,North,Furniture,Chairs,Alera Mesh Chair,2709.93,3,0,283.22
+ORD-1077,2022-09-11,2022-09-14,Standard Class,CUS-96275,Corporate,South,Clothing,Footwear,Adidas Sneakers,5506.35,7,0.1,1090.41
+ORD-1466,2022-09-13,2022-09-15,Standard Class,CUS-60353,Consumer,West,Furniture,Furnishings,Tenex Mat,1922.81,2,0.1,201.71
+ORD-1233,2022-09-15,2022-09-19,Standard Class,CUS-40539,Corporate,South,Office Supplies,Envelopes,Staples Envelope,9762.6,9,0.05,445.69
+ORD-1506,2022-09-15,2022-09-22,Same Day,CUS-26276,Home Office,West,Clothing,Outerwear,Columbia Jacket,182.44,1,0.1,34.32
+ORD-1443,2022-09-16,2022-09-23,First Class,CUS-18180,Home Office,West,Office Supplies,Appliances,Holmes Heater,8456.51,10,0.2,74.94
+ORD-1487,2022-09-17,2022-09-24,First Class,CUS-92157,Home Office,South,Clothing,Footwear,New Balance,4845.57,8,0.2,-824.06
+ORD-1273,2022-09-18,2022-09-25,Same Day,CUS-86609,Corporate,East,Clothing,Sportswear,Puma Tights,2112.6,5,0.1,238.39
+ORD-1284,2022-09-19,2022-09-25,Second Class,CUS-54922,Consumer,South,Furniture,Furnishings,Tenex Mat,5730.06,8,0.15,-159.93
+ORD-1343,2022-09-21,2022-09-26,Same Day,CUS-54359,Home Office,East,Clothing,Outerwear,Columbia Jacket,2299.42,4,0,246.21
+ORD-1147,2022-09-23,2022-09-29,Same Day,CUS-29369,Home Office,North,Clothing,Sportswear,Nike Dri-Fit Tee,674.18,1,0,149.36
+ORD-1441,2022-09-23,2022-09-30,Second Class,CUS-86122,Consumer,West,Furniture,Tables,Bretford Table,6650.59,8,0,694.61
+ORD-1164,2022-09-24,2022-09-25,Standard Class,CUS-19046,Corporate,North,Office Supplies,Appliances,Hoover Vacuum,1532.78,10,0.2,-194.63
+ORD-1111,2022-09-28,2022-10-02,First Class,CUS-12389,Consumer,West,Furniture,Furnishings,Deflecto Barrier,6206.52,6,0,1579.1
+ORD-1405,2022-10-02,2022-10-05,Second Class,CUS-66369,Corporate,East,Technology,Copiers,HP LaserJet,9967.29,10,0.05,2371.21
+ORD-1450,2022-10-02,2022-10-09,First Class,CUS-47907,Corporate,North,Furniture,Tables,HON Conference Table,11945.53,9,0.15,-374.2
+ORD-1531,2022-10-02,2022-10-08,Same Day,CUS-84455,Home Office,North,Furniture,Furnishings,Advantus Panel,1169.46,6,0.15,-157.77
+ORD-1536,2022-10-04,2022-10-09,Second Class,CUS-85608,Corporate,South,Clothing,Sportswear,Puma Tights,2864.24,9,0,714.68
+ORD-1388,2022-10-08,2022-10-13,First Class,CUS-57187,Corporate,East,Clothing,Workwear,Timberland Boots,4843.63,10,0.05,514.72
+ORD-1579,2022-10-09,2022-10-13,Standard Class,CUS-31146,Corporate,North,Clothing,Workwear,Carhartt Work Shirt,7449.57,8,0.15,-178.43
+ORD-1251,2022-10-12,2022-10-18,Standard Class,CUS-85082,Home Office,South,Office Supplies,Art,Dixon Ticonderoga,2049.38,7,0.1,-72.99
+ORD-1498,2022-10-12,2022-10-16,Second Class,CUS-70036,Consumer,East,Office Supplies,Envelopes,Staples Envelope,4285.37,9,0,810.93
+ORD-1502,2022-10-13,2022-10-16,First Class,CUS-50381,Home Office,North,Office Supplies,Envelopes,Staples Envelope,2642.96,7,0.15,-374.53
+ORD-1146,2022-10-15,2022-10-21,Standard Class,CUS-64596,Corporate,South,Office Supplies,Binders,Ibico Binder,4875.28,10,0,874.9
+ORD-1509,2022-10-17,2022-10-20,Standard Class,CUS-47992,Home Office,West,Technology,Machines,GBC Binding Sys,259.59,1,0.2,-12.52
+ORD-1499,2022-10-18,2022-10-24,Same Day,CUS-54392,Consumer,South,Office Supplies,Binders,Ibico Binder,5533.97,5,0,1637.42
+ORD-1193,2022-10-19,2022-10-26,Second Class,CUS-52714,Corporate,South,Office Supplies,Art,Faber-Castell Markers,1997.85,6,0.3,-217.17
+ORD-1070,2022-10-22,2022-10-29,Same Day,CUS-60604,Home Office,South,Technology,Phones,Apple iPhone,396.44,7,0.3,-71.2
+ORD-1203,2022-10-30,2022-11-04,Same Day,CUS-86939,Corporate,South,Furniture,Furnishings,Deflecto Barrier,10966.98,9,0.15,177.47
+ORD-1264,2022-10-30,2022-11-04,Standard Class,CUS-23845,Home Office,East,Clothing,Footwear,New Balance,1074.28,2,0,250.29
+ORD-1595,2022-11-03,2022-11-07,Second Class,CUS-72423,Corporate,South,Clothing,Footwear,Adidas Sneakers,8668.37,7,0,909.37
+ORD-1094,2022-11-07,2022-11-12,Second Class,CUS-30280,Corporate,North,Office Supplies,Envelopes,Poly Envelope,4500.22,5,0.15,-526.65
+ORD-1110,2022-11-07,2022-11-13,Second Class,CUS-55851,Home Office,North,Clothing,Sportswear,Adidas Track Pants,8378.82,10,0.15,-1030.55
+ORD-1183,2022-11-10,2022-11-16,First Class,CUS-81176,Home Office,North,Furniture,Chairs,Alera Mesh Chair,5580.32,10,0,1838.84
+ORD-1185,2022-11-11,2022-11-14,Same Day,CUS-52778,Home Office,West,Technology,Accessories,Belkin Cable,137.64,1,0.05,31.86
+ORD-1242,2022-11-11,2022-11-15,Same Day,CUS-32650,Consumer,North,Clothing,Footwear,Adidas Sneakers,4823.54,10,0.2,-415.05
+ORD-1249,2022-11-11,2022-11-18,First Class,CUS-19506,Consumer,South,Office Supplies,Art,BIC Pens,71.44,1,0,20.65
+ORD-1360,2022-11-17,2022-11-22,Second Class,CUS-85609,Corporate,East,Office Supplies,Binders,Cardinal Binder,694.19,1,0.15,61.91
+ORD-1118,2022-11-18,2022-11-19,Standard Class,CUS-12490,Consumer,South,Furniture,Furnishings,Deflecto Barrier,1840.72,3,0.3,-458.11
+ORD-1535,2022-11-21,2022-11-24,Same Day,CUS-96960,Consumer,East,Clothing,Workwear,Dickies Pants,6253.2,6,0.1,414.29
+ORD-1362,2022-11-22,2022-11-25,First Class,CUS-89349,Home Office,West,Clothing,Footwear,Nike Running Shoes,1013.15,3,0.15,-60.22
+ORD-1137,2022-11-23,2022-11-24,Same Day,CUS-92203,Consumer,North,Furniture,Bookcases,Atlantic Bookcase,3280.65,4,0.2,-174.24
+ORD-1296,2022-11-24,2022-11-26,Same Day,CUS-74990,Corporate,North,Technology,Phones,Motorola Droid,2211.74,7,0,183.89
+ORD-1428,2022-11-26,2022-11-29,Standard Class,CUS-45585,Home Office,West,Technology,Phones,Apple iPhone,1480.96,10,0.1,178.34
+ORD-1002,2022-11-28,2022-12-03,First Class,CUS-15695,Consumer,East,Technology,Machines,Fellowes Shredder,993.31,2,0.15,83.26
+ORD-1584,2022-11-28,2022-12-05,Standard Class,CUS-23879,Consumer,East,Office Supplies,Art,Newell Pencils,937.13,1,0.3,-144.57
+ORD-1440,2022-12-02,2022-12-09,Same Day,CUS-33091,Consumer,South,Furniture,Tables,Bevis Training Table,5939.06,10,0.15,28.95
+ORD-1293,2022-12-03,2022-12-09,Second Class,CUS-24818,Consumer,South,Clothing,Workwear,Wrangler Jeans,3361.79,5,0.3,-517.81
+ORD-1495,2022-12-04,2022-12-07,Second Class,CUS-73470,Corporate,East,Clothing,Workwear,Timberland Boots,2832.53,10,0.1,-66.94
+ORD-1399,2022-12-05,2022-12-10,First Class,CUS-81932,Corporate,North,Clothing,Workwear,Carhartt Work Shirt,2366.73,6,0.05,142.07
+ORD-1261,2022-12-06,2022-12-08,Same Day,CUS-49171,Home Office,West,Technology,Accessories,Kensington Lock,2988.08,9,0.3,-643.53
+ORD-1322,2022-12-06,2022-12-08,Standard Class,CUS-81939,Corporate,South,Technology,Copiers,HP LaserJet,3376.37,4,0.1,-59.19
+ORD-1122,2022-12-08,2022-12-10,Same Day,CUS-72722,Home Office,South,Furniture,Furnishings,Eldon Shelf,312.4,1,0.15,23.32
+ORD-1455,2022-12-08,2022-12-14,Second Class,CUS-59781,Home Office,North,Office Supplies,Appliances,Holmes Heater,1145.93,3,0.3,-330.75
+ORD-1234,2022-12-11,2022-12-12,Second Class,CUS-46677,Corporate,North,Furniture,Tables,Bretford Table,776.99,2,0.05,91.96
+ORD-1403,2022-12-12,2022-12-19,Standard Class,CUS-82737,Corporate,East,Office Supplies,Art,BIC Pens,960.54,1,0.2,19.6
+ORD-1494,2022-12-12,2022-12-17,First Class,CUS-63961,Corporate,West,Furniture,Furnishings,Eldon Shelf,195.4,2,0.05,45.03
+ORD-1517,2022-12-14,2022-12-17,Second Class,CUS-80402,Consumer,East,Technology,Accessories,Logitech Keyboard,10576.13,10,0.05,2096.92
+ORD-1199,2022-12-15,2022-12-19,First Class,CUS-18804,Corporate,East,Clothing,Outerwear,Under Armour Hoodie,3915.39,6,0.3,-685.43
+ORD-1210,2022-12-15,2022-12-17,Second Class,CUS-37124,Corporate,North,Furniture,Chairs,Alera Mesh Chair,9638.24,10,0.2,-1688.47
+ORD-1397,2022-12-15,2022-12-19,Standard Class,CUS-40603,Corporate,South,Office Supplies,Appliances,Avery Coffeemaker,3075.37,3,0.3,-620.43
+ORD-1513,2022-12-15,2022-12-18,Standard Class,CUS-25544,Home Office,East,Office Supplies,Art,Faber-Castell Markers,5649.28,10,0.15,-556.48
+ORD-1022,2022-12-16,2022-12-23,Standard Class,CUS-97538,Consumer,North,Office Supplies,Binders,Avery Binder,7989.75,8,0.1,760.25
+ORD-1117,2022-12-17,2022-12-18,First Class,CUS-22987,Corporate,North,Furniture,Tables,Bretford Table,2826.2,4,0,512.18
+ORD-1271,2022-12-18,2022-12-25,Second Class,CUS-39012,Consumer,East,Office Supplies,Appliances,Avery Coffeemaker,593.46,1,0,184.29
+ORD-1491,2022-12-24,2022-12-29,Standard Class,CUS-71625,Home Office,East,Clothing,Sportswear,Champion Shorts,683.63,2,0.3,-163.2
+ORD-1347,2022-12-25,2023-01-01,First Class,CUS-39661,Corporate,West,Technology,Accessories,Logitech Keyboard,1582.65,2,0.15,-81.0
+ORD-1243,2022-12-26,2022-12-30,Same Day,CUS-82179,Consumer,South,Office Supplies,Binders,Ibico Binder,243.26,3,0.05,43.73
+ORD-1150,2022-12-27,2022-12-30,First Class,CUS-37168,Home Office,East,Clothing,Outerwear,North Face Parka,3351.77,5,0.05,868.78
+ORD-1562,2023-01-01,2023-01-03,Second Class,CUS-76681,Corporate,West,Clothing,Footwear,Adidas Sneakers,1172.38,2,0.05,280.68
+ORD-1245,2023-01-06,2023-01-08,Standard Class,CUS-46822,Home Office,West,Clothing,Sportswear,Adidas Track Pants,2255.35,7,0,374.61
+ORD-1376,2023-01-09,2023-01-14,Standard Class,CUS-61879,Home Office,North,Technology,Accessories,Plantronics Headset,2769.78,7,0,815.66
+ORD-1112,2023-01-13,2023-01-16,Standard Class,CUS-76543,Consumer,East,Technology,Machines,Swingline Trimmer,1490.52,4,0,181.6
+ORD-1511,2023-01-13,2023-01-17,First Class,CUS-31368,Home Office,North,Office Supplies,Art,Newell Pencils,1539.98,3,0.15,100.53
+ORD-1011,2023-01-14,2023-01-19,Second Class,CUS-26828,Consumer,East,Furniture,Chairs,Hon Office Chair,2140.06,2,0,736.3
+ORD-1329,2023-01-16,2023-01-20,First Class,CUS-15297,Home Office,North,Technology,Copiers,HP LaserJet,1743.63,8,0,485.95
+ORD-1478,2023-01-16,2023-01-22,Standard Class,CUS-80432,Consumer,East,Clothing,Sportswear,Adidas Track Pants,8197.78,10,0.3,-2937.3
+ORD-1342,2023-01-19,2023-01-24,Same Day,CUS-43263,Home Office,East,Clothing,Outerwear,Under Armour Hoodie,6113.42,9,0.3,-1966.97
+ORD-1286,2023-01-21,2023-01-22,Same Day,CUS-68237,Corporate,North,Office Supplies,Appliances,Holmes Heater,2292.58,2,0,213.26
+ORD-1384,2023-01-21,2023-01-27,Standard Class,CUS-57307,Home Office,South,Furniture,Bookcases,Sauder Bookcase,7220.11,8,0,1490.06
+ORD-1209,2023-01-22,2023-01-23,Same Day,CUS-44447,Home Office,North,Clothing,Outerwear,Under Armour Hoodie,1592.43,2,0.05,135.96
+ORD-1125,2023-01-24,2023-01-31,First Class,CUS-20828,Corporate,West,Clothing,Workwear,Timberland Boots,1779.05,3,0.3,-481.8
+ORD-1107,2023-01-26,2023-02-02,Second Class,CUS-52143,Consumer,East,Furniture,Tables,HON Conference Table,8249.57,10,0,1661.7
+ORD-1133,2023-01-26,2023-02-02,Same Day,CUS-85353,Home Office,West,Technology,Accessories,Logitech Keyboard,1586.5,5,0.3,-361.82
+ORD-1444,2023-01-27,2023-02-02,Same Day,CUS-63219,Consumer,North,Office Supplies,Appliances,Avery Coffeemaker,282.06,1,0.2,-14.44
+ORD-1228,2023-02-01,2023-02-04,Standard Class,CUS-75031,Home Office,South,Office Supplies,Appliances,Holmes Heater,4265.33,6,0.1,304.72
+ORD-1496,2023-02-01,2023-02-04,Second Class,CUS-32984,Consumer,East,Technology,Machines,Acco Punch,11036.6,8,0,3004.04
+ORD-1321,2023-02-04,2023-02-05,First Class,CUS-37532,Home Office,North,Technology,Accessories,Logitech Keyboard,530.05,1,0.2,-39.74
+ORD-1250,2023-02-05,2023-02-09,Same Day,CUS-95089,Home Office,West,Furniture,Furnishings,Tenex Mat,1108.05,6,0,307.74
+ORD-1198,2023-02-06,2023-02-07,Standard Class,CUS-28569,Corporate,West,Technology,Machines,Fellowes Shredder,1487.14,8,0.2,42.45
+ORD-1599,2023-02-06,2023-02-09,First Class,CUS-38256,Corporate,East,Clothing,Footwear,Adidas Sneakers,3561.9,3,0.2,-736.83
+ORD-1194,2023-02-10,2023-02-15,Standard Class,CUS-70505,Corporate,East,Office Supplies,Appliances,Hoover Vacuum,18670.93,10,0,4930.29
+ORD-1379,2023-02-13,2023-02-17,Second Class,CUS-84278,Home Office,East,Technology,Machines,Fellowes Shredder,6335.08,8,0.1,484.88
+ORD-1332,2023-02-15,2023-02-18,Same Day,CUS-73191,Home Office,East,Furniture,Furnishings,Deflecto Barrier,2232.79,4,0.15,168.92
+ORD-1018,2023-02-16,2023-02-19,Second Class,CUS-17665,Corporate,North,Office Supplies,Envelopes,Kraft Envelope,5963.52,7,0.3,-1957.26
+ORD-1167,2023-02-16,2023-02-22,Same Day,CUS-90599,Consumer,South,Clothing,Sportswear,Nike Dri-Fit Tee,1267.07,5,0,112.39
+ORD-1421,2023-02-16,2023-02-20,Second Class,CUS-37400,Corporate,North,Furniture,Furnishings,Deflecto Barrier,734.85,3,0.1,13.88
+ORD-1177,2023-02-17,2023-02-23,Same Day,CUS-34123,Corporate,South,Office Supplies,Binders,Ibico Binder,4870.45,8,0.15,-483.63
+ORD-1287,2023-02-18,2023-02-24,Standard Class,CUS-96832,Home Office,North,Office Supplies,Envelopes,Staples Envelope,3177.02,4,0,512.46
+ORD-1175,2023-02-19,2023-02-26,Same Day,CUS-51973,Home Office,West,Office Supplies,Binders,Cardinal Binder,2398.06,6,0.3,-585.56
+ORD-1411,2023-02-19,2023-02-21,Same Day,CUS-15144,Corporate,East,Furniture,Bookcases,Realspace Bookcase,12493.25,8,0,3960.37
+ORD-1445,2023-02-21,2023-02-24,Same Day,CUS-30220,Home Office,West,Technology,Copiers,Xerox WorkCentre,570.76,3,0.2,4.39
+ORD-1220,2023-02-23,2023-02-25,Second Class,CUS-63963,Home Office,South,Technology,Accessories,Logitech Keyboard,4508.0,10,0.3,-1240.51
+ORD-1159,2023-02-25,2023-02-28,Second Class,CUS-18142,Corporate,South,Office Supplies,Binders,Cardinal Binder,10884.24,10,0,1639.38
+ORD-1527,2023-02-25,2023-02-27,Same Day,CUS-66450,Corporate,West,Clothing,Workwear,Wrangler Jeans,107.85,1,0.1,18.21
+ORD-1207,2023-02-26,2023-02-28,First Class,CUS-14285,Corporate,West,Clothing,Workwear,Wrangler Jeans,2646.37,8,0,780.38
+ORD-1254,2023-03-02,2023-03-03,Same Day,CUS-85766,Home Office,West,Clothing,Outerwear,Under Armour Hoodie,6457.64,8,0.15,15.67
+ORD-1304,2023-03-05,2023-03-09,Second Class,CUS-28111,Home Office,East,Clothing,Workwear,Dickies Pants,2200.23,5,0.15,257.5
+ORD-1412,2023-03-05,2023-03-09,First Class,CUS-90364,Consumer,North,Office Supplies,Envelopes,Mead Envelope,4651.66,5,0.1,253.81
+ORD-1247,2023-03-07,2023-03-10,Second Class,CUS-83807,Consumer,East,Technology,Copiers,Brother Laser,7927.75,6,0,2139.96
+ORD-1456,2023-03-10,2023-03-13,Standard Class,CUS-22761,Corporate,West,Technology,Phones,Samsung Galaxy,5333.15,5,0.3,-1423.2
+ORD-1252,2023-03-13,2023-03-16,Second Class,CUS-93386,Consumer,North,Office Supplies,Art,Newell Pencils,1863.31,8,0,268.8
+ORD-1552,2023-03-17,2023-03-21,Second Class,CUS-44312,Home Office,West,Technology,Accessories,Logitech Keyboard,6060.23,9,0.05,1514.14
+ORD-1320,2023-03-21,2023-03-23,First Class,CUS-98773,Corporate,North,Technology,Copiers,HP LaserJet,8705.27,7,0.1,1647.35
+ORD-1363,2023-03-21,2023-03-23,First Class,CUS-20494,Corporate,East,Office Supplies,Envelopes,Mead Envelope,1223.68,3,0,139.21
+ORD-1078,2023-03-22,2023-03-24,First Class,CUS-98835,Consumer,East,Furniture,Tables,Bretford Table,3052.35,4,0.15,-262.1
+ORD-1124,2023-03-27,2023-03-30,First Class,CUS-26315,Corporate,West,Furniture,Chairs,Staples Fabric Chair,8529.55,6,0,2676.28
+ORD-1566,2023-03-28,2023-04-01,First Class,CUS-94825,Consumer,East,Technology,Phones,Samsung Galaxy,1236.24,1,0,228.58
+ORD-1550,2023-04-01,2023-04-07,Same Day,CUS-51864,Home Office,South,Office Supplies,Binders,Wilson Jones Binder,373.87,2,0,115.41
+ORD-1266,2023-04-03,2023-04-10,First Class,CUS-50756,Corporate,North,Office Supplies,Art,Newell Pencils,10783.53,8,0.15,-1504.7
+ORD-1016,2023-04-05,2023-04-09,Second Class,CUS-19880,Consumer,East,Technology,Copiers,HP LaserJet,4889.42,9,0.2,-833.44
+ORD-1240,2023-04-09,2023-04-10,Second Class,CUS-27133,Home Office,West,Technology,Accessories,Kensington Lock,1739.45,2,0,196.2
+ORD-1158,2023-04-11,2023-04-13,Standard Class,CUS-44181,Home Office,West,Office Supplies,Appliances,Sanyo Microwave,468.56,2,0,97.89
+ORD-1521,2023-04-15,2023-04-19,Same Day,CUS-78506,Corporate,East,Technology,Accessories,Kensington Lock,1678.57,6,0.3,-316.47
+ORD-1212,2023-04-23,2023-04-29,Same Day,CUS-74154,Corporate,North,Technology,Copiers,HP LaserJet,3537.96,3,0.05,745.09
+ORD-1407,2023-04-23,2023-04-28,First Class,CUS-89377,Corporate,East,Office Supplies,Art,Dixon Ticonderoga,627.99,2,0,179.52
+ORD-1064,2023-04-24,2023-05-01,Same Day,CUS-77449,Corporate,West,Clothing,Footwear,New Balance,955.34,2,0.15,-108.62
+ORD-1299,2023-04-25,2023-04-28,Standard Class,CUS-39218,Home Office,North,Furniture,Bookcases,Atlantic Bookcase,4103.81,9,0.3,-465.39
+ORD-1305,2023-04-26,2023-05-02,Second Class,CUS-95208,Home Office,East,Office Supplies,Art,Dixon Ticonderoga,2819.33,4,0.1,325.31
+ORD-1439,2023-04-27,2023-05-02,Same Day,CUS-67062,Home Office,South,Technology,Copiers,Xerox WorkCentre,676.44,7,0.05,152.03
+ORD-1429,2023-04-28,2023-05-01,Standard Class,CUS-36489,Corporate,North,Technology,Machines,Swingline Trimmer,1921.24,5,0.1,-43.7
+ORD-1424,2023-04-30,2023-05-01,First Class,CUS-49358,Consumer,West,Office Supplies,Binders,Avery Binder,743.44,1,0.1,-0.97
+ORD-1385,2023-05-02,2023-05-07,Standard Class,CUS-23267,Home Office,East,Furniture,Furnishings,Advantus Panel,2059.63,2,0,690.06
+ORD-1447,2023-05-02,2023-05-04,Second Class,CUS-65675,Home Office,West,Clothing,Outerwear,Under Armour Hoodie,3023.6,9,0.3,-804.66
+ORD-1420,2023-05-04,2023-05-07,First Class,CUS-58309,Consumer,South,Office Supplies,Art,Faber-Castell Markers,4410.06,10,0,463.69
+ORD-1231,2023-05-09,2023-05-15,Standard Class,CUS-33507,Corporate,South,Technology,Phones,Motorola Droid,5248.21,5,0.15,-591.8
+ORD-1357,2023-05-09,2023-05-15,First Class,CUS-40907,Corporate,East,Clothing,Sportswear,Puma Tights,3143.86,3,0.05,706.84
+ORD-1224,2023-05-12,2023-05-13,Standard Class,CUS-62163,Home Office,East,Technology,Phones,Samsung Galaxy,739.98,1,0,111.58
+ORD-1339,2023-05-12,2023-05-15,Same Day,CUS-40475,Consumer,East,Clothing,Outerwear,Under Armour Hoodie,3806.0,7,0,741.72
+ORD-1191,2023-05-13,2023-05-15,Same Day,CUS-24021,Corporate,East,Furniture,Furnishings,Tenex Mat,3839.62,4,0.3,-805.06
+ORD-1219,2023-05-15,2023-05-18,First Class,CUS-27973,Corporate,South,Furniture,Chairs,Flash Chair,2199.23,2,0,237.22
+ORD-1557,2023-05-17,2023-05-22,Standard Class,CUS-10702,Consumer,East,Furniture,Bookcases,Bush Classic Bookcase,5648.45,6,0.3,-704.81
+ORD-1545,2023-05-18,2023-05-19,Standard Class,CUS-96798,Home Office,West,Technology,Machines,GBC Binding Sys,2715.14,6,0.15,208.44
+ORD-1126,2023-05-20,2023-05-25,Same Day,CUS-31842,Corporate,North,Technology,Machines,Acco Punch,365.71,2,0.1,4.66
+ORD-1571,2023-05-21,2023-05-27,Same Day,CUS-33534,Consumer,West,Clothing,Sportswear,Adidas Track Pants,3797.87,5,0,420.66
+ORD-1325,2023-05-28,2023-06-03,First Class,CUS-72908,Consumer,South,Office Supplies,Art,Dixon Ticonderoga,2081.15,7,0.15,-226.3
+ORD-1102,2023-05-30,2023-06-04,Same Day,CUS-57428,Home Office,West,Clothing,Sportswear,Champion Shorts,392.89,7,0.15,-38.74
+ORD-1560,2023-05-31,2023-06-02,Same Day,CUS-16975,Corporate,East,Office Supplies,Binders,Ibico Binder,1352.58,3,0.3,-221.56
+ORD-1555,2023-06-03,2023-06-06,Second Class,CUS-90960,Home Office,South,Technology,Machines,GBC Binding Sys,1455.1,7,0,127.71
+ORD-1578,2023-06-04,2023-06-05,Standard Class,CUS-65312,Corporate,West,Office Supplies,Appliances,Sanyo Microwave,4073.4,7,0.3,-1252.1
+ORD-1358,2023-06-05,2023-06-12,First Class,CUS-73782,Consumer,West,Technology,Copiers,Xerox WorkCentre,186.03,1,0.3,-62.08
+ORD-1048,2023-06-07,2023-06-12,Same Day,CUS-70931,Home Office,East,Clothing,Outerwear,Under Armour Hoodie,2461.7,3,0.1,237.05
+ORD-1317,2023-06-11,2023-06-18,First Class,CUS-83149,Home Office,North,Technology,Accessories,Kensington Lock,524.92,6,0,49.68
+ORD-1554,2023-06-11,2023-06-15,Same Day,CUS-27065,Home Office,West,Clothing,Footwear,Adidas Sneakers,864.7,4,0.1,6.7
+ORD-1049,2023-06-12,2023-06-18,Same Day,CUS-54092,Corporate,East,Technology,Accessories,Belkin Cable,2886.75,8,0.3,-623.94
+ORD-1481,2023-06-12,2023-06-15,Second Class,CUS-54025,Consumer,South,Clothing,Outerwear,Under Armour Hoodie,1120.18,6,0.05,196.75
+ORD-1106,2023-06-20,2023-06-24,Standard Class,CUS-17456,Corporate,North,Clothing,Sportswear,Adidas Track Pants,1638.75,10,0,268.44
+ORD-1115,2023-06-22,2023-06-23,Same Day,CUS-58655,Corporate,West,Clothing,Workwear,Dickies Pants,5304.11,4,0,1674.56
+ORD-1025,2023-06-24,2023-06-26,Same Day,CUS-26704,Home Office,West,Furniture,Bookcases,Bush Classic Bookcase,1541.74,3,0.15,18.93
+ORD-1221,2023-06-26,2023-06-29,Second Class,CUS-42477,Consumer,South,Furniture,Chairs,Hon Office Chair,7182.8,10,0.15,826.58
+ORD-1017,2023-06-27,2023-07-01,Standard Class,CUS-31579,Consumer,North,Furniture,Bookcases,Sauder Bookcase,1195.14,3,0.3,-373.23
+ORD-1127,2023-06-29,2023-07-05,Same Day,CUS-57619,Corporate,East,Furniture,Furnishings,Deflecto Barrier,6126.04,5,0,614.2
+ORD-1260,2023-07-02,2023-07-08,Standard Class,CUS-21233,Corporate,North,Clothing,Workwear,Timberland Boots,5792.3,4,0,699.74
+ORD-1503,2023-07-02,2023-07-06,Second Class,CUS-86962,Consumer,North,Clothing,Workwear,Wrangler Jeans,1048.78,5,0.2,-24.41
+ORD-1568,2023-07-02,2023-07-06,Standard Class,CUS-15300,Corporate,West,Office Supplies,Envelopes,Poly Envelope,9389.16,7,0,1851.62
+ORD-1591,2023-07-03,2023-07-06,Same Day,CUS-26515,Home Office,South,Clothing,Sportswear,Puma Tights,3433.88,4,0,308.99
+ORD-1162,2023-07-04,2023-07-09,Same Day,CUS-25235,Consumer,East,Furniture,Bookcases,Sauder Bookcase,8005.91,10,0,1349.73
+ORD-1415,2023-07-10,2023-07-15,Second Class,CUS-31249,Consumer,East,Clothing,Outerwear,Under Armour Hoodie,5267.14,9,0,1718.71
+ORD-1556,2023-07-13,2023-07-17,Second Class,CUS-60265,Corporate,South,Clothing,Footwear,Nike Running Shoes,1706.35,8,0.15,201.5
+ORD-1551,2023-07-14,2023-07-18,First Class,CUS-33840,Home Office,West,Technology,Machines,GBC Binding Sys,8038.8,10,0.1,-131.52
+ORD-1389,2023-07-16,2023-07-19,Standard Class,CUS-49365,Corporate,West,Furniture,Bookcases,Atlantic Bookcase,938.41,10,0,326.77
+ORD-1237,2023-07-17,2023-07-21,First Class,CUS-63282,Consumer,East,Furniture,Chairs,Alera Mesh Chair,2103.83,10,0,261.68
+ORD-1227,2023-07-18,2023-07-21,First Class,CUS-31884,Corporate,North,Technology,Accessories,Logitech Keyboard,3675.35,3,0,786.64
+ORD-1053,2023-07-19,2023-07-25,Same Day,CUS-46241,Corporate,East,Office Supplies,Art,Newell Pencils,2576.37,4,0,339.35
+ORD-1300,2023-07-20,2023-07-23,First Class,CUS-81786,Home Office,East,Clothing,Sportswear,Puma Tights,314.06,2,0.05,1.76
+ORD-1043,2023-07-21,2023-07-26,Standard Class,CUS-55870,Corporate,East,Clothing,Sportswear,Puma Tights,5515.41,5,0.3,-2011.84
+ORD-1086,2023-07-21,2023-07-23,Standard Class,CUS-82641,Home Office,North,Technology,Accessories,Logitech Keyboard,1851.88,6,0,541.65
+ORD-1214,2023-07-21,2023-07-25,Second Class,CUS-74843,Corporate,West,Furniture,Bookcases,Realspace Bookcase,6732.98,6,0.2,-1085.26
+ORD-1524,2023-07-21,2023-07-27,Standard Class,CUS-18942,Consumer,North,Office Supplies,Envelopes,Mead Envelope,3399.56,4,0,299.25
+ORD-1229,2023-07-22,2023-07-28,Standard Class,CUS-39937,Consumer,East,Clothing,Outerwear,Patagonia Vest,1236.18,3,0,397.37
+ORD-1068,2023-07-25,2023-08-01,First Class,CUS-10336,Corporate,South,Technology,Copiers,Canon Imageclass,4636.57,5,0.2,-594.56
+ORD-1303,2023-07-26,2023-07-28,Second Class,CUS-23573,Corporate,South,Furniture,Bookcases,Realspace Bookcase,7476.34,10,0,1994.62
+ORD-1007,2023-07-29,2023-07-31,Same Day,CUS-21915,Corporate,South,Technology,Copiers,Brother Laser,5361.87,10,0.2,-655.55
+ORD-1387,2023-07-29,2023-08-03,Same Day,CUS-56179,Consumer,West,Technology,Copiers,Xerox WorkCentre,4140.42,9,0,928.09
+ORD-1003,2023-07-30,2023-08-01,First Class,CUS-20458,Corporate,North,Furniture,Furnishings,Tenex Mat,3877.19,10,0,358.15
+ORD-1323,2023-08-03,2023-08-06,Second Class,CUS-97988,Corporate,North,Furniture,Furnishings,Advantus Panel,3541.25,4,0.3,-400.46
+ORD-1326,2023-08-06,2023-08-13,Second Class,CUS-80597,Corporate,West,Office Supplies,Envelopes,Poly Envelope,3244.81,3,0,997.08
+ORD-1083,2023-08-09,2023-08-10,Standard Class,CUS-40775,Home Office,East,Clothing,Footwear,Adidas Sneakers,1044.87,1,0.1,207.83
+ORD-1488,2023-08-09,2023-08-15,Second Class,CUS-99740,Home Office,North,Furniture,Tables,Bretford Table,589.87,9,0.2,-9.86
+ORD-1401,2023-08-11,2023-08-15,Standard Class,CUS-51347,Consumer,North,Clothing,Sportswear,Adidas Track Pants,126.61,2,0.2,-19.95
+ORD-1432,2023-08-15,2023-08-20,First Class,CUS-67817,Consumer,North,Office Supplies,Appliances,Avery Coffeemaker,1751.47,4,0.05,144.27
+ORD-1559,2023-08-17,2023-08-21,First Class,CUS-57263,Consumer,South,Office Supplies,Envelopes,Staples Envelope,875.75,5,0,301.43
+ORD-1081,2023-08-18,2023-08-19,Same Day,CUS-58311,Consumer,North,Technology,Phones,Motorola Droid,2110.43,2,0,319.53
+ORD-1331,2023-08-20,2023-08-23,Second Class,CUS-59369,Consumer,West,Furniture,Furnishings,Advantus Panel,6622.01,9,0.1,1029.16
+ORD-1059,2023-08-21,2023-08-28,Second Class,CUS-65723,Consumer,East,Technology,Machines,Acco Punch,1202.53,8,0.05,305.99
+ORD-1435,2023-08-23,2023-08-26,First Class,CUS-35971,Consumer,North,Clothing,Footwear,Nike Running Shoes,2698.8,7,0.3,-549.46
+ORD-1149,2023-08-24,2023-08-28,First Class,CUS-81601,Home Office,North,Technology,Copiers,Brother Laser,4160.03,8,0.15,471.35
+ORD-1165,2023-08-25,2023-08-29,Same Day,CUS-20518,Corporate,North,Clothing,Outerwear,North Face Parka,3848.89,7,0.2,-380.64
+ORD-1034,2023-08-28,2023-08-30,Second Class,CUS-29313,Home Office,South,Furniture,Furnishings,Tenex Mat,1520.73,2,0.05,283.85
+ORD-1259,2023-08-28,2023-09-01,First Class,CUS-34455,Corporate,North,Clothing,Workwear,Wrangler Jeans,885.5,5,0.2,-150.61
+ORD-1587,2023-08-29,2023-09-04,Second Class,CUS-29871,Corporate,East,Technology,Accessories,Belkin Cable,6533.13,6,0.2,-801.13
+ORD-1012,2023-09-01,2023-09-06,Same Day,CUS-25860,Corporate,South,Clothing,Outerwear,North Face Parka,2670.78,5,0.15,-71.34
+ORD-1108,2023-09-02,2023-09-08,Same Day,CUS-67595,Consumer,South,Clothing,Footwear,Skechers Comfort,1197.44,2,0,108.45
+ORD-1418,2023-09-02,2023-09-07,Second Class,CUS-16411,Corporate,West,Clothing,Footwear,Nike Running Shoes,5230.92,4,0.1,509.16
+ORD-1475,2023-09-02,2023-09-03,Second Class,CUS-75521,Consumer,South,Technology,Machines,Swingline Trimmer,2162.19,7,0,529.4
+ORD-1574,2023-09-05,2023-09-11,Same Day,CUS-49669,Home Office,West,Clothing,Workwear,Timberland Boots,7473.23,10,0.15,309.98
+ORD-1161,2023-09-07,2023-09-13,Standard Class,CUS-78879,Corporate,South,Office Supplies,Envelopes,Mead Envelope,10266.7,9,0.05,2163.22
+ORD-1244,2023-09-09,2023-09-16,Standard Class,CUS-60134,Consumer,North,Office Supplies,Envelopes,Staples Envelope,2043.64,7,0.05,358.26
+ORD-1426,2023-09-09,2023-09-16,Same Day,CUS-17342,Consumer,West,Technology,Phones,Apple iPhone,7681.69,8,0.15,-154.66
+ORD-1508,2023-09-12,2023-09-14,Standard Class,CUS-29154,Corporate,West,Clothing,Footwear,Skechers Comfort,10969.29,9,0,3381.02
+ORD-1095,2023-09-15,2023-09-22,Standard Class,CUS-89822,Consumer,South,Office Supplies,Binders,Wilson Jones Binder,2698.82,5,0.2,22.11
+ORD-1400,2023-09-17,2023-09-23,First Class,CUS-16957,Home Office,South,Furniture,Tables,Bevis Training Table,893.42,5,0.1,-14.13
+ORD-1402,2023-09-20,2023-09-24,Second Class,CUS-12408,Consumer,North,Technology,Phones,Samsung Galaxy,331.16,1,0.1,6.64
+ORD-1452,2023-09-20,2023-09-21,Standard Class,CUS-89144,Consumer,North,Furniture,Furnishings,Tenex Mat,2251.76,3,0.1,363.93
+ORD-1577,2023-09-21,2023-09-22,Standard Class,CUS-92629,Consumer,West,Clothing,Outerwear,North Face Parka,2960.35,5,0.2,-610.58
+ORD-1540,2023-09-22,2023-09-25,Second Class,CUS-94448,Corporate,West,Furniture,Chairs,Alera Mesh Chair,1270.85,5,0.1,182.0
+ORD-1281,2023-09-26,2023-09-28,Second Class,CUS-74169,Home Office,East,Technology,Machines,Fellowes Shredder,552.2,1,0.05,116.25
+ORD-1392,2023-09-27,2023-10-04,Same Day,CUS-64594,Home Office,North,Office Supplies,Appliances,Sanyo Microwave,1505.48,2,0.15,-76.87
+ORD-1151,2023-09-29,2023-10-03,First Class,CUS-29198,Corporate,East,Office Supplies,Binders,Cardinal Binder,1770.91,2,0.2,38.7
+ORD-1285,2023-10-01,2023-10-02,Second Class,CUS-26143,Consumer,East,Technology,Phones,Samsung Galaxy,1478.25,4,0,202.55
+ORD-1465,2023-10-02,2023-10-07,First Class,CUS-53704,Corporate,West,Clothing,Footwear,Adidas Sneakers,470.19,1,0.3,-158.58
+ORD-1409,2023-10-04,2023-10-08,Second Class,CUS-97993,Consumer,West,Technology,Copiers,HP LaserJet,545.87,1,0,180.06
+ORD-1463,2023-10-05,2023-10-06,First Class,CUS-68442,Consumer,North,Clothing,Outerwear,Columbia Jacket,7679.85,8,0,686.67
+ORD-1223,2023-10-11,2023-10-14,Second Class,CUS-60703,Consumer,West,Technology,Phones,Samsung Galaxy,10130.71,9,0,3509.87
+ORD-1486,2023-10-12,2023-10-13,Standard Class,CUS-72886,Consumer,South,Furniture,Tables,Chromcraft Table,1251.32,3,0.05,225.07
+ORD-1423,2023-10-14,2023-10-21,Standard Class,CUS-37175,Corporate,West,Technology,Copiers,Brother Laser,282.93,4,0,58.15
+ORD-1276,2023-10-16,2023-10-22,Second Class,CUS-99957,Corporate,East,Clothing,Workwear,Wrangler Jeans,1067.75,1,0.05,104.27
+ORD-1373,2023-10-18,2023-10-22,Second Class,CUS-35191,Corporate,East,Furniture,Furnishings,Advantus Panel,428.48,3,0.2,-86.01
+ORD-1525,2023-10-18,2023-10-24,Same Day,CUS-71082,Consumer,North,Clothing,Sportswear,Nike Dri-Fit Tee,4208.94,5,0,1200.58
+ORD-1586,2023-10-18,2023-10-25,Standard Class,CUS-42154,Consumer,North,Office Supplies,Binders,Avery Binder,1579.86,2,0.3,-170.94
+ORD-1537,2023-10-20,2023-10-23,Same Day,CUS-29365,Home Office,South,Clothing,Sportswear,Puma Tights,7151.28,10,0,1580.52
+ORD-1593,2023-11-01,2023-11-02,Same Day,CUS-49054,Home Office,North,Furniture,Furnishings,Tenex Mat,3851.08,9,0,1094.75
+ORD-1179,2023-11-02,2023-11-07,First Class,CUS-80220,Corporate,West,Furniture,Tables,HON Conference Table,62.9,1,0.2,-13.64
+ORD-1225,2023-11-04,2023-11-07,Standard Class,CUS-77017,Home Office,East,Clothing,Workwear,Wrangler Jeans,1604.7,2,0,248.59
+ORD-1269,2023-11-04,2023-11-05,First Class,CUS-36097,Consumer,West,Furniture,Chairs,Alera Mesh Chair,4039.97,4,0.05,56.27
+ORD-1425,2023-11-04,2023-11-06,First Class,CUS-54294,Consumer,East,Furniture,Furnishings,Tenex Mat,7417.67,7,0,2259.8
+ORD-1032,2023-11-05,2023-11-09,Second Class,CUS-90676,Home Office,East,Clothing,Sportswear,Puma Tights,3331.3,5,0.05,394.83
+ORD-1230,2023-11-09,2023-11-16,Standard Class,CUS-82465,Consumer,North,Furniture,Chairs,Hon Office Chair,4123.44,8,0,529.12
+ORD-1309,2023-11-13,2023-11-14,Standard Class,CUS-42943,Home Office,East,Furniture,Tables,HON Conference Table,6980.61,7,0.15,808.18
+ORD-1337,2023-11-13,2023-11-15,Same Day,CUS-29603,Consumer,East,Office Supplies,Envelopes,Poly Envelope,2327.73,4,0,254.45
+ORD-1099,2023-11-16,2023-11-20,Standard Class,CUS-11007,Corporate,North,Clothing,Footwear,Skechers Comfort,7845.91,10,0.1,-453.0
+ORD-1128,2023-11-17,2023-11-22,Standard Class,CUS-89310,Consumer,South,Technology,Phones,Samsung Galaxy,308.43,3,0.15,-14.56
+ORD-1569,2023-11-18,2023-11-22,Standard Class,CUS-72601,Corporate,East,Technology,Copiers,Xerox WorkCentre,10866.87,9,0,1722.29
+ORD-1316,2023-11-19,2023-11-23,Standard Class,CUS-36945,Consumer,North,Technology,Accessories,Logitech Keyboard,3431.3,4,0.05,818.49
+ORD-1532,2023-11-21,2023-11-22,Same Day,CUS-23114,Corporate,West,Furniture,Tables,Bevis Training Table,3173.78,6,0.2,-421.94
+ORD-1589,2023-11-26,2023-12-02,Second Class,CUS-85308,Consumer,North,Office Supplies,Binders,Ibico Binder,1449.84,3,0.2,-21.77
+ORD-1346,2023-11-28,2023-11-29,First Class,CUS-62354,Consumer,East,Furniture,Chairs,Alera Mesh Chair,556.44,1,0,191.1
+ORD-1288,2023-12-02,2023-12-09,Standard Class,CUS-75239,Home Office,East,Technology,Phones,Samsung Galaxy,8047.02,9,0,1258.0
+ORD-1592,2023-12-02,2023-12-09,First Class,CUS-65410,Consumer,East,Furniture,Furnishings,Tenex Mat,249.27,3,0.1,-1.21
+ORD-1313,2023-12-03,2023-12-06,First Class,CUS-48479,Home Office,North,Technology,Phones,Nokia Lumia,802.65,2,0.05,147.77
+ORD-1190,2023-12-04,2023-12-06,Same Day,CUS-46170,Home Office,South,Clothing,Outerwear,North Face Parka,1120.05,5,0.3,-370.29
+ORD-1427,2023-12-04,2023-12-06,First Class,CUS-14085,Home Office,East,Office Supplies,Appliances,Hoover Vacuum,7268.21,10,0.15,-923.95
+ORD-1301,2023-12-06,2023-12-11,Second Class,CUS-34581,Home Office,East,Furniture,Bookcases,Sauder Bookcase,1380.78,8,0.2,-263.9
+ORD-1368,2023-12-08,2023-12-15,Same Day,CUS-48393,Corporate,South,Office Supplies,Envelopes,Poly Envelope,7877.33,8,0.3,-2277.38
+ORD-1109,2023-12-10,2023-12-16,First Class,CUS-18639,Corporate,South,Office Supplies,Binders,Ibico Binder,8131.79,7,0,2383.36
+ORD-1382,2023-12-10,2023-12-16,Standard Class,CUS-15737,Home Office,West,Technology,Machines,Acco Punch,4917.03,7,0,521.15
+ORD-1054,2023-12-11,2023-12-13,First Class,CUS-15965,Consumer,East,Technology,Machines,GBC Binding Sys,1845.78,6,0,500.51
+ORD-1459,2023-12-12,2023-12-13,Standard Class,CUS-87874,Home Office,North,Clothing,Sportswear,Nike Dri-Fit Tee,1588.01,5,0,137.2
+ORD-1113,2023-12-15,2023-12-16,Same Day,CUS-57749,Home Office,North,Office Supplies,Art,Faber-Castell Markers,663.62,3,0,182.31
+ORD-1588,2023-12-21,2023-12-25,Second Class,CUS-11303,Consumer,West,Technology,Phones,Nokia Lumia,6764.64,7,0.15,742.82
+ORD-1172,2023-12-22,2023-12-23,Second Class,CUS-16755,Corporate,South,Technology,Machines,GBC Binding Sys,4116.98,6,0.3,-581.62
+ORD-1457,2023-12-25,2023-12-29,Same Day,CUS-98511,Corporate,East,Office Supplies,Binders,Cardinal Binder,6828.1,5,0.1,728.37
+ORD-1492,2023-12-26,2023-12-29,Standard Class,CUS-24334,Corporate,East,Office Supplies,Appliances,Hoover Vacuum,1501.64,8,0.2,33.7
+ORD-1101,2023-12-27,2024-01-03,First Class,CUS-85465,Home Office,South,Office Supplies,Appliances,Sanyo Microwave,311.82,1,0.3,-37.82
+ORD-1436,2023-12-29,2023-12-31,Second Class,CUS-90863,Corporate,North,Technology,Accessories,Kensington Lock,1148.99,2,0.3,-279.15
+ORD-1042,2023-12-30,2024-01-03,First Class,CUS-37742,Corporate,North,Furniture,Bookcases,Realspace Bookcase,4491.11,3,0,420.26
+ORD-1367,2023-12-30,2024-01-02,Standard Class,CUS-10012,Corporate,East,Clothing,Outerwear,Columbia Jacket,4034.02,8,0.2,-604.51
+ORD-1277,2023-12-31,2024-01-06,First Class,CUS-83273,Home Office,West,Office Supplies,Binders,Avery Binder,2074.84,9,0,429.72

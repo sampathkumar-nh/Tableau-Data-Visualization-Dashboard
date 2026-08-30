@@ -1,0 +1,184 @@
+================================================================================
+  TABLEAU PARAMETERS — Business Performance Dashboard
+  Project: Data Visualization Dashboard (Retail Business Analysis)
+  Dataset: business_data.csv
+================================================================================
+
+Each parameter is listed with:
+  • Parameter Name
+  • Data Type
+  • Current Value (default shown when workbook opens)
+  • Allowable Values (List / Range / All)
+  • Display Format
+  • Connected Calculated Field(s)
+  • How to Create in Tableau
+
+--------------------------------------------------------------------------------
+PARAMETER 1: KPI Selector
+--------------------------------------------------------------------------------
+Name            : KPI Selector
+Data Type       : String
+Current Value   : Sales
+Allowable Values: List
+  Value         Display As
+  ─────────────────────────
+  Sales         Sales
+  Profit        Profit
+  Quantity      Quantity
+
+Display Format  : Automatic (String)
+Connected Fields: [Dynamic KPI Value], [Dynamic KPI Label]
+Purpose         : Allows business users to switch the primary metric displayed
+                  across all charts without rebuilding views. A single parameter
+                  control drives the Rows/Columns shelf KPI in every sheet that
+                  uses [Dynamic KPI Value].
+
+How to Create   :
+  1. Right-click in the Data pane → Create Parameter
+  2. Name: KPI Selector
+  3. Data type: String
+  4. Current value: Sales
+  5. Allowable values: List
+  6. Add entries: Sales / Profit / Quantity
+  7. Click OK
+  8. Right-click the parameter → Show Parameter Control
+
+--------------------------------------------------------------------------------
+PARAMETER 2: Top N Products
+--------------------------------------------------------------------------------
+Name            : Top N Products
+Data Type       : Integer
+Current Value   : 10
+Allowable Values: Range
+  Minimum       : 3
+  Maximum       : 25
+  Step Size     : 1
+
+Display Format  : Automatic (Integer)
+Connected Fields: [Top N Flag]
+Purpose         : Dynamically controls how many top-selling products appear
+                  in Sheet 5 (Top N Products bar chart). User slides the
+                  control to instantly update the ranked list.
+
+How to Create   :
+  1. Right-click in the Data pane → Create Parameter
+  2. Name: Top N Products
+  3. Data type: Integer
+  4. Current value: 10
+  5. Allowable values: Range
+  6. Minimum: 3, Maximum: 25, Step size: 1
+  7. Click OK
+  8. Right-click the parameter → Show Parameter Control
+     (Tip: change display style to "Slider" for better UX)
+
+--------------------------------------------------------------------------------
+PARAMETER 3: Date Granularity
+--------------------------------------------------------------------------------
+Name            : Date Granularity
+Data Type       : String
+Current Value   : Month
+Allowable Values: List
+  Value         Display As
+  ─────────────────────────
+  Month         Monthly
+  Quarter       Quarterly
+  Year          Yearly
+
+Display Format  : Automatic (String)
+Connected Fields: [Date Granularity Selector]
+Purpose         : Lets users toggle between monthly, quarterly, and yearly
+                  time granularity on trend charts (Sheet 2, Sheet 6) without
+                  duplicating sheets. The [Date Granularity Selector] calculated
+                  field applies DATETRUNC() based on the selected value.
+
+How to Create   :
+  1. Right-click in the Data pane → Create Parameter
+  2. Name: Date Granularity
+  3. Data type: String
+  4. Current value: Month
+  5. Allowable values: List
+  6. Add entries: Month / Quarter / Year  (use display aliases: Monthly / Quarterly / Yearly)
+  7. Click OK
+  8. Right-click the parameter → Show Parameter Control
+     (Tip: use "Single Value (dropdown)" or "Single Value (list)" display style)
+
+--------------------------------------------------------------------------------
+PARAMETER 4: Profit Ratio Threshold
+--------------------------------------------------------------------------------
+Name            : Profit Ratio Threshold
+Data Type       : Float
+Current Value   : 0.15
+Allowable Values: Range
+  Minimum       : 0.00
+  Maximum       : 0.50
+  Step Size     : 0.01
+
+Display Format  : Percentage (0 decimal places)
+Connected Fields: (used inline in reference line or in a custom alert field)
+Purpose         : Draws a dynamic reference line on the Profit Ratio chart
+                  (Sheet 4). Users drag the slider to set their own acceptable
+                  profit margin threshold and instantly see which regions/
+                  categories fall below it.
+
+How to Create   :
+  1. Right-click in the Data pane → Create Parameter
+  2. Name: Profit Ratio Threshold
+  3. Data type: Float
+  4. Current value: 0.15
+  5. Allowable values: Range
+  6. Minimum: 0.00, Maximum: 0.50, Step size: 0.01
+  7. Display format: Percentage
+  8. Click OK
+  9. Right-click the parameter → Show Parameter Control
+  10. To add reference line: In a sheet, right-click the axis → Add Reference Line
+      → Value: [Profit Ratio Threshold], Label: "Target Margin"
+
+--------------------------------------------------------------------------------
+PARAMETER 5: Discount Threshold
+--------------------------------------------------------------------------------
+Name            : Discount Threshold
+Data Type       : Float
+Current Value   : 0.20
+Allowable Values: Range
+  Minimum       : 0.00
+  Maximum       : 0.50
+  Step Size     : 0.05
+
+Display Format  : Percentage (0 decimal places)
+Connected Fields: (used in a highlight filter or alert calculated field)
+Purpose         : Highlights orders where the applied discount exceeds the
+                  threshold. Use to create an "Excessive Discounting" alert
+                  layer on the Profit Ratio heatmap or scatter chart.
+
+Suggested Alert Field Formula:
+    // Create a calculated field named "Excessive Discount Flag"
+    IF [Discount] >= [Discount Threshold]
+    THEN "Excessive Discount"
+    ELSE "Normal Discount"
+    END
+
+How to Create   :
+  1. Right-click in the Data pane → Create Parameter
+  2. Name: Discount Threshold
+  3. Data type: Float
+  4. Current value: 0.20
+  5. Allowable values: Range
+  6. Minimum: 0.00, Maximum: 0.50, Step size: 0.05
+  7. Display format: Percentage
+  8. Click OK
+
+--------------------------------------------------------------------------------
+PARAMETER SUMMARY TABLE
+--------------------------------------------------------------------------------
+
+Parameter Name          Data Type  Default   Range / List              Used In
+──────────────────────  ─────────  ────────  ────────────────────────  ───────────────────────────
+KPI Selector            String     Sales     Sales / Profit / Quantity  Sheet 1, 3, 4, 5 (KPI axis)
+Top N Products          Integer    10        3 – 25 (step 1)           Sheet 5 (Top N Products)
+Date Granularity        String     Month     Month/Quarter/Year         Sheet 2, 6 (Trend charts)
+Profit Ratio Threshold  Float      15%       0% – 50% (step 1%)        Sheet 4 (Reference line)
+Discount Threshold      Float      20%       0% – 50% (step 5%)        Scatter / Heatmap alert
+
+================================================================================
+END OF PARAMETERS
+================================================================================

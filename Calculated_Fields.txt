@@ -1,0 +1,203 @@
+================================================================================
+  TABLEAU CALCULATED FIELDS — Business Performance Dashboard
+  Project: Data Visualization Dashboard (Retail Business Analysis)
+  Dataset: business_data.csv
+================================================================================
+
+Each field below is listed with:
+  • Field Name
+  • Data Type
+  • Formula (copy-paste ready into Tableau's Calculation Editor)
+  • Purpose / Notes
+
+--------------------------------------------------------------------------------
+1. PROFIT RATIO
+--------------------------------------------------------------------------------
+Name        : Profit Ratio
+Data Type   : Float (Continuous)
+Formula     :
+    // Profit as a percentage of Sales
+    // Returns 0 if Sales is zero to avoid division errors
+    IF SUM([Sales]) != 0
+    THEN SUM([Profit]) / SUM([Sales])
+    ELSE 0
+    END
+
+Notes       : Format as Percentage (2 decimal places).
+              Use in views to quickly assess margin health per region/category.
+
+--------------------------------------------------------------------------------
+2. SALES GROWTH %
+--------------------------------------------------------------------------------
+Name        : Sales Growth %
+Data Type   : Float (Continuous)
+Formula     :
+    // Year-over-Year Sales Growth percentage
+    // Requires Order Date dimension on the view at YEAR granularity
+    (SUM([Sales]) - LOOKUP(SUM([Sales]), -1))
+    /
+    ABS(LOOKUP(SUM([Sales]), -1))
+
+Notes       : Table calculation — set "Compute Using" to Order Date (Year).
+              Format as Percentage. Returns null for the first year (no prior period).
+
+--------------------------------------------------------------------------------
+3. PROFIT PER UNIT
+--------------------------------------------------------------------------------
+Name        : Profit per Unit
+Data Type   : Float (Continuous)
+Formula     :
+    // Average profit earned for each unit sold
+    IF SUM([Quantity]) != 0
+    THEN SUM([Profit]) / SUM([Quantity])
+    ELSE 0
+    END
+
+Notes       : Format as Currency ($). Useful in scatter plots against Sales per Unit.
+
+--------------------------------------------------------------------------------
+4. ABOVE / BELOW AVERAGE SALES (Boolean Flag)
+--------------------------------------------------------------------------------
+Name        : Above Average Sales
+Data Type   : Boolean
+Formula     :
+    // TRUE if the current mark's Sales exceeds the overall average
+    SUM([Sales]) > WINDOW_AVG(SUM([Sales]))
+
+Notes       : Table calculation — set "Compute Using" to the dimension in the view
+              (e.g., Region, Sub-Category, Product Name).
+              Use to conditionally color marks: True = green, False = red.
+
+--------------------------------------------------------------------------------
+5. DYNAMIC KPI SELECTOR
+--------------------------------------------------------------------------------
+Name        : Dynamic KPI Value
+Data Type   : Float (Continuous)
+Formula     :
+    // Switches the displayed metric based on the [KPI Selector] parameter
+    // Depends on Parameter: KPI Selector (see Parameters.txt)
+    IF [KPI Selector] = "Sales"     THEN SUM([Sales])
+    ELSEIF [KPI Selector] = "Profit" THEN SUM([Profit])
+    ELSEIF [KPI Selector] = "Quantity" THEN SUM([Quantity])
+    ELSE SUM([Sales])
+    END
+
+Notes       : Use this field on the Rows/Columns shelf wherever you want a
+              user-switchable KPI axis. Connect to the KPI Selector parameter control.
+
+--------------------------------------------------------------------------------
+6. DYNAMIC KPI LABEL
+--------------------------------------------------------------------------------
+Name        : Dynamic KPI Label
+Data Type   : String
+Formula     :
+    // Returns a human-readable label for the currently selected KPI
+    IF [KPI Selector] = "Sales"      THEN "Total Sales ($)"
+    ELSEIF [KPI Selector] = "Profit" THEN "Total Profit ($)"
+    ELSEIF [KPI Selector] = "Quantity" THEN "Units Sold"
+    ELSE "Total Sales ($)"
+    END
+
+Notes       : Drag onto the Title or Axis Title to make axis labels dynamic.
+
+--------------------------------------------------------------------------------
+7. RUNNING TOTAL SALES
+--------------------------------------------------------------------------------
+Name        : Running Total Sales
+Data Type   : Float (Continuous)
+Formula     :
+    // Cumulative sum of Sales ordered by Order Date
+    RUNNING_SUM(SUM([Sales]))
+
+Notes       : Table calculation — set "Compute Using" to Order Date.
+              Use in line charts to show cumulative revenue growth over time.
+
+--------------------------------------------------------------------------------
+8. REGION RANK BY SALES
+--------------------------------------------------------------------------------
+Name        : Region Rank by Sales
+Data Type   : Integer (Discrete)
+Formula     :
+    // Rank each region by total Sales (1 = highest)
+    RANK(SUM([Sales]), 'desc')
+
+Notes       : Table calculation — set "Compute Using" to Region.
+              Drag to Color or Label to highlight top-performing regions.
+              Use "Competition" rank type for tied values.
+
+--------------------------------------------------------------------------------
+9. DISCOUNT IMPACT
+--------------------------------------------------------------------------------
+Name        : Discount Impact ($)
+Data Type   : Float (Continuous)
+Formula     :
+    // Estimated revenue lost due to discounting
+    // Approximates original price as Sales / (1 - Discount), then subtracts Sales
+    SUM([Sales] / (1 - [Discount])) - SUM([Sales])
+
+Notes       : Format as Currency. Useful in bar charts to show discount cost per region.
+              Note: filter out rows where Discount = 1 (100%) to avoid divide-by-zero.
+
+--------------------------------------------------------------------------------
+10. SALES PER UNIT
+--------------------------------------------------------------------------------
+Name        : Sales per Unit
+Data Type   : Float (Continuous)
+Formula     :
+    // Average revenue per unit sold
+    IF SUM([Quantity]) != 0
+    THEN SUM([Sales]) / SUM([Quantity])
+    ELSE 0
+    END
+
+Notes       : Format as Currency ($). Pair with Profit per Unit in dual-axis scatter.
+
+--------------------------------------------------------------------------------
+11. TOP N FLAG (for Parameter filtering)
+--------------------------------------------------------------------------------
+Name        : Top N Flag
+Data Type   : Boolean
+Formula     :
+    // Flags TRUE for the top N products by Sales
+    // Depends on Parameter: Top N Products (see Parameters.txt)
+    RANK(SUM([Sales]), 'desc') <= [Top N Products]
+
+Notes       : Table calculation — set "Compute Using" to Product Name.
+              Drag to the Filters shelf (keep TRUE only) to show Top N Products.
+
+--------------------------------------------------------------------------------
+12. MONTH/QUARTER/YEAR DATE TRUNCATION
+--------------------------------------------------------------------------------
+Name        : Date Granularity Selector
+Data Type   : Date
+Formula     :
+    // Returns Order Date truncated to the granularity chosen by the parameter
+    // Depends on Parameter: Date Granularity (see Parameters.txt)
+    IF [Date Granularity] = "Month"   THEN DATETRUNC('month',   [Order Date])
+    ELSEIF [Date Granularity] = "Quarter" THEN DATETRUNC('quarter', [Order Date])
+    ELSEIF [Date Granularity] = "Year"    THEN DATETRUNC('year',    [Order Date])
+    ELSE DATETRUNC('month', [Order Date])
+    END
+
+Notes       : Use this field on the Columns shelf in trend/line charts instead of
+              Order Date directly, giving end-users interactive date roll-up control.
+
+--------------------------------------------------------------------------------
+13. PROFIT CATEGORY (Bin)
+--------------------------------------------------------------------------------
+Name        : Profit Category
+Data Type   : String
+Formula     :
+    // Classifies each order's profit into performance tiers
+    IF [Profit] >= 200        THEN "High Profit"
+    ELSEIF [Profit] >= 50     THEN "Moderate Profit"
+    ELSEIF [Profit] >= 0      THEN "Low Profit"
+    ELSE "Loss"
+    END
+
+Notes       : Row-level calculation (no aggregation needed).
+              Use for color encoding on scatter plots or as a filter dimension.
+
+================================================================================
+END OF CALCULATED FIELDS
+================================================================================
