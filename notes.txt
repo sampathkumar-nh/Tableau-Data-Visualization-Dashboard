@@ -1,3 +1,4 @@
 connected business_data.csv checked field types
 created 5 parameters
 calculated fields Profit Ratio Sales Growth Above Average Sales
+Sheet 1 regional bar and Sheet 2 dual axis done
