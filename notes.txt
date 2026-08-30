@@ -1,1 +1,2 @@
 connected business_data.csv checked field types
+created 5 parameters
