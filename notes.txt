@@ -5,3 +5,4 @@ Sheet 1 regional bar and Sheet 2 dual axis done
 Sheet 3 treemap fixed color encoding
 Sheet 4 heatmap and Sheet 5 Top N dynamic bar done
 Sheet 6 sales trend with forecast
+Dashboard assembled filter actions and highlight actions done
