@@ -1,2 +1,3 @@
 connected business_data.csv checked field types
 created 5 parameters
+calculated fields Profit Ratio Sales Growth Above Average Sales
