@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Visualization Dashboard — Tableau Style</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"Segoe UI",system-ui,sans-serif;background:#f4f6f9;color:#1f2328;font-size:13px}
+.topbar{background:#2d4a6b;color:#fff;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:48px}
+.topbar-left{display:flex;align-items:center;gap:16px}
+.tool-badge{background:#e8841a;color:#fff;font-size:10px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.5px}
+.topbar h1{font-size:15px;font-weight:600}
+.topbar-filters{display:flex;gap:10px}
+.filter-pill{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);padding:5px 12px;border-radius:20px;font-size:11px;cursor:pointer}
+.filter-pill select{background:transparent;border:none;color:#fff;font-size:11px;cursor:pointer;outline:none}
+.tabs{background:#fff;border-bottom:2px solid #e5e7eb;display:flex;padding:0 24px}
+.tab{padding:10px 18px;font-size:12px;font-weight:600;color:#6b7280;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-2px}
+.tab.active{color:#2d4a6b;border-bottom-color:#2d4a6b}
+.tab:hover:not(.active){color:#374151}
+.body{padding:20px 24px 32px;max-width:1400px;margin:0 auto}
+/* Stat strip */
+.stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.stat{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:14px 16px;display:flex;flex-direction:column}
+.stat-label{font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px}
+.stat-val{font-size:22px;font-weight:700;color:#1f2328}
+.stat-sub{font-size:11px;color:#6b7280;margin-top:3px}
+.stat-up{color:#16a34a;font-weight:600}
+.stat-down{color:#dc2626;font-weight:600}
+/* Grid */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.grid-3{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px}
+.grid-full{margin-bottom:16px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:18px}
+.card h3{font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.8px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between}
+.chart-type{font-size:10px;background:#f3f4f6;color:#6b7280;padding:2px 7px;border-radius:3px;font-weight:600;letter-spacing:0}
+/* Bars */
+.hbar-chart{display:flex;flex-direction:column;gap:10px}
+.hbar-row{display:flex;align-items:center;gap:10px}
+.hbar-lbl{width:80px;font-size:11px;color:#374151;text-align:right;flex-shrink:0}
+.hbar-track{flex:1;background:#f3f4f6;border-radius:4px;height:22px;overflow:hidden;position:relative}
+.hbar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding:0 8px;font-size:10px;font-weight:600;color:#fff}
+.hbar-val{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:10px;color:#374151;font-weight:600}
+/* Dual axis SVG */
+.dual-wrap{width:100%;height:200px;position:relative}
+/* Treemap */
+.treemap{display:grid;gap:3px;height:200px}
+.tm-cell{border-radius:4px;display:flex;align-items:flex-end;padding:8px;cursor:default;position:relative}
+.tm-cell .tm-name{font-size:11px;font-weight:600;color:#fff}
+.tm-cell .tm-val{font-size:10px;color:rgba(255,255,255,.8)}
+/* Heatmap */
+.heatmap-grid{display:grid;gap:4px}
+.hm-row{display:grid;gap:4px}
+.hm-cell{border-radius:3px;padding:8px 6px;text-align:center;font-size:10px;font-weight:600}
+.hm-header{font-size:10px;color:#6b7280;font-weight:600;padding:4px 6px;text-align:center}
+/* Top N */
+.param-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.param-label{font-size:11px;color:#6b7280}
+.param-range{flex:1;max-width:140px;accent-color:#2d4a6b}
+.param-val{font-size:12px;font-weight:700;color:#2d4a6b;width:20px}
+.page{display:none}
+.page.active{display:block}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="tool-badge">TABLEAU</span>
+    <h1>Business Performance Dashboard</h1>
+  </div>
+  <div class="topbar-filters">
+    <div class="filter-pill">
+      📅 <select onchange="filterByYear(this.value)">
+        <option value="all">All Years</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+    </div>
+    <div class="filter-pill">
+      🗺️ <select onchange="filterByRegion(this.value)">
+        <option value="all">All Regions</option>
+        <option value="East">East</option>
+        <option value="North">North</option>
+        <option value="South">South</option>
+        <option value="West">West</option>
+      </select>
+    </div>
+    <div class="filter-pill">
+      📊 <select id="kpi-selector" onchange="switchKPI(this.value)">
+        <option value="sales">KPI: Sales</option>
+        <option value="profit">KPI: Profit</option>
+        <option value="qty">KPI: Quantity</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="showTab('overview',this)">Overview</div>
+  <div class="tab" onclick="showTab('regional',this)">Regional Analysis</div>
+  <div class="tab" onclick="showTab('categories',this)">Category Performance</div>
+  <div class="tab" onclick="showTab('trends',this)">Trend &amp; Forecast</div>
+</div>
+
+<div class="body">
+
+  <!-- Stat Strip (always visible) -->
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="stat-label">Total Sales</div>
+      <div class="stat-val" id="s-sales">$2.16M</div>
+      <div class="stat-sub"><span class="stat-up">▲ 14.2%</span> vs prior year</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Total Profit</div>
+      <div class="stat-val" id="s-profit">$170.7K</div>
+      <div class="stat-sub"><span class="stat-up">▲ 7.9%</span> vs prior year</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Profit Ratio</div>
+      <div class="stat-val" id="s-margin">7.9%</div>
+      <div class="stat-sub">Overall margin</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Total Quantity</div>
+      <div class="stat-val">3,439</div>
+      <div class="stat-sub">Units ordered</div>
+    </div>
+  </div>
+
+  <!-- OVERVIEW TAB -->
+  <div class="page active" id="tab-overview">
+    <div class="grid-2">
+      <!-- Chart 1: Regional Sales Bar -->
+      <div class="card">
+        <h3>Chart 1 — Regional Sales Comparison <span class="chart-type">BAR CHART</span></h3>
+        <div class="hbar-chart" id="region-bars">
+          <div class="hbar-row"><div class="hbar-lbl">East</div><div class="hbar-track"><div class="hbar-fill" style="width:100%;background:#2d4a6b">$625.8K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">South</div><div class="hbar-track"><div class="hbar-fill" style="width:86%;background:#3b6ea5">$540.8K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">North</div><div class="hbar-track"><div class="hbar-fill" style="width:83%;background:#4a8cc4">$521.7K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">West</div><div class="hbar-track"><div class="hbar-fill" style="width:76%;background:#5fa8de">$475.6K</div></div></div>
+        </div>
+      </div>
+      <!-- Chart 3: Category Treemap -->
+      <div class="card">
+        <h3>Chart 3 — Category Performance <span class="chart-type">TREEMAP</span></h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;height:180px">
+          <div style="background:#2d4a6b;border-radius:5px;padding:12px;display:flex;flex-direction:column;justify-content:flex-end">
+            <div style="font-size:12px;font-weight:700;color:#fff">Clothing</div>
+            <div style="font-size:10px;color:rgba(255,255,255,.7)">$575K — 26.6%</div>
+          </div>
+          <div style="background:#3b6ea5;border-radius:5px;padding:12px;display:flex;flex-direction:column;justify-content:flex-end">
+            <div style="font-size:12px;font-weight:700;color:#fff">Furniture</div>
+            <div style="font-size:10px;color:rgba(255,255,255,.7)">$572K — 26.4%</div>
+          </div>
+          <div style="background:#e8841a;border-radius:5px;padding:12px;display:flex;flex-direction:column;justify-content:flex-end">
+            <div style="font-size:12px;font-weight:700;color:#fff">Technology</div>
+            <div style="font-size:10px;color:rgba(255,255,255,.7)">$516K — 23.8%</div>
+          </div>
+          <div style="background:#5fa8de;border-radius:5px;padding:12px;display:flex;flex-direction:column;justify-content:flex-end">
+            <div style="font-size:12px;font-weight:700;color:#fff">Office Supp.</div>
+            <div style="font-size:10px;color:rgba(255,255,255,.7)">$502K — 23.2%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart 2: Dual Axis -->
+    <div class="grid-full">
+      <div class="card">
+        <h3>Chart 2 — Sales vs Profit Dual-Axis Trend <span class="chart-type">DUAL AXIS</span></h3>
+        <svg width="100%" height="200" viewBox="0 0 900 200" id="dual-svg"></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGIONAL TAB -->
+  <div class="page" id="tab-regional">
+    <div class="grid-2">
+      <div class="card">
+        <h3>Profit Ratio by Region <span class="chart-type">HEATMAP</span></h3>
+        <div style="overflow-x:auto">
+          <div style="display:grid;grid-template-columns:80px repeat(4,1fr);gap:4px;min-width:400px">
+            <div></div>
+            <div class="hm-header">East</div>
+            <div class="hm-header">North</div>
+            <div class="hm-header">South</div>
+            <div class="hm-header">West</div>
+            <div class="hm-header" style="text-align:right">Clothing</div>
+            <div class="hm-cell" style="background:#1d4ed8;color:#fff">8.5%</div>
+            <div class="hm-cell" style="background:#3b82f6;color:#fff">7.9%</div>
+            <div class="hm-cell" style="background:#93c5fd;color:#1f2328">6.2%</div>
+            <div class="hm-cell" style="background:#bfdbfe;color:#1f2328">5.8%</div>
+            <div class="hm-header" style="text-align:right">Furniture</div>
+            <div class="hm-cell" style="background:#3b82f6;color:#fff">9.1%</div>
+            <div class="hm-cell" style="background:#60a5fa;color:#fff">8.4%</div>
+            <div class="hm-cell" style="background:#93c5fd;color:#1f2328">7.2%</div>
+            <div class="hm-cell" style="background:#bfdbfe;color:#1f2328">6.9%</div>
+            <div class="hm-header" style="text-align:right">Technology</div>
+            <div class="hm-cell" style="background:#1d4ed8;color:#fff">9.8%</div>
+            <div class="hm-cell" style="background:#2563eb;color:#fff">9.2%</div>
+            <div class="hm-cell" style="background:#3b82f6;color:#fff">8.3%</div>
+            <div class="hm-cell" style="background:#60a5fa;color:#fff">7.5%</div>
+            <div class="hm-header" style="text-align:right">Office Supp.</div>
+            <div class="hm-cell" style="background:#60a5fa;color:#fff">7.8%</div>
+            <div class="hm-cell" style="background:#93c5fd;color:#1f2328">6.9%</div>
+            <div class="hm-cell" style="background:#bfdbfe;color:#1f2328">5.4%</div>
+            <div class="hm-cell" style="background:#dbeafe;color:#1f2328">4.8%</div>
+          </div>
+        </div>
+        <div style="margin-top:12px;display:flex;align-items:center;gap:6px;font-size:10px;color:#6b7280">
+          <span>Low</span>
+          <div style="flex:1;height:8px;border-radius:4px;background:linear-gradient(to right,#dbeafe,#1d4ed8)"></div>
+          <span>High</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Sales vs Profit by Region <span class="chart-type">GROUPED BAR</span></h3>
+        <div class="hbar-chart">
+          <div style="display:flex;gap:12px;margin-bottom:8px;font-size:10px">
+            <div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;background:#2d4a6b;border-radius:2px"></div>Sales</div>
+            <div style="display:flex;align-items:center;gap:4px"><div style="width:10px;height:10px;background:#e8841a;border-radius:2px"></div>Profit</div>
+          </div>
+          <div class="hbar-row"><div class="hbar-lbl">East</div><div class="hbar-track"><div class="hbar-fill" style="width:100%;background:#2d4a6b">Sales: $625.8K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl"></div><div class="hbar-track"><div class="hbar-fill" style="width:7%;background:#e8841a">$44.9K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">South</div><div class="hbar-track"><div class="hbar-fill" style="width:86%;background:#2d4a6b">Sales: $540.8K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl"></div><div class="hbar-track"><div class="hbar-fill" style="width:7%;background:#e8841a">$43.2K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">North</div><div class="hbar-track"><div class="hbar-fill" style="width:83%;background:#2d4a6b">Sales: $521.7K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl"></div><div class="hbar-track"><div class="hbar-fill" style="width:7%;background:#e8841a">$44.0K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">West</div><div class="hbar-track"><div class="hbar-fill" style="width:76%;background:#2d4a6b">Sales: $475.6K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl"></div><div class="hbar-track"><div class="hbar-fill" style="width:6%;background:#e8841a">$38.5K</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES TAB -->
+  <div class="page" id="tab-categories">
+    <div class="grid-full">
+      <div class="card">
+        <h3>Chart 5 — Top Products by Sales (Dynamic) <span class="chart-type">TOP-N PARAMETER</span></h3>
+        <div class="param-row">
+          <span class="param-label">Top N:</span>
+          <input type="range" class="param-range" min="3" max="10" value="5" oninput="updateTopN(this.value)" id="topn-range">
+          <span class="param-val" id="topn-val">5</span>
+        </div>
+        <div class="hbar-chart" id="topn-bars"></div>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Profit by Category <span class="chart-type">BAR CHART</span></h3>
+        <div class="hbar-chart">
+          <div class="hbar-row"><div class="hbar-lbl">Furniture</div><div class="hbar-track"><div class="hbar-fill" style="width:100%;background:#2d4a6b">$52.1K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">Technology</div><div class="hbar-track"><div class="hbar-fill" style="width:80%;background:#3b6ea5">$41.7K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">Clothing</div><div class="hbar-track"><div class="hbar-fill" style="width:80%;background:#4a8cc4">$41.6K</div></div></div>
+          <div class="hbar-row"><div class="hbar-lbl">Office Supp.</div><div class="hbar-track"><div class="hbar-fill" style="width:68%;background:#5fa8de">$35.4K</div></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Sales by Customer Segment <span class="chart-type">PIE</span></h3>
+        <div style="display:flex;align-items:center;gap:20px;justify-content:center;padding:10px 0">
+          <svg width="140" height="140" viewBox="0 0 140 140">
+            <circle cx="70" cy="70" r="50" fill="none" stroke="#f3f4f6" stroke-width="26"/>
+            <circle cx="70" cy="70" r="50" fill="none" stroke="#2d4a6b" stroke-width="26" stroke-dasharray="117 197" stroke-dashoffset="0"/>
+            <circle cx="70" cy="70" r="50" fill="none" stroke="#e8841a" stroke-width="26" stroke-dasharray="87 197" stroke-dashoffset="-117"/>
+            <circle cx="70" cy="70" r="50" fill="none" stroke="#5fa8de" stroke-width="26" stroke-dasharray="55 197" stroke-dashoffset="-204"/>
+            <text x="70" y="67" text-anchor="middle" fill="#1f2328" font-size="12" font-weight="700">Segments</text>
+            <text x="70" y="82" text-anchor="middle" fill="#6b7280" font-size="9">3 types</text>
+          </svg>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;gap:8px;font-size:11px"><div style="width:10px;height:10px;background:#2d4a6b;border-radius:50%"></div><div><div style="font-weight:600">Corporate</div><div style="color:#6b7280">$955K — 44.2%</div></div></div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:11px"><div style="width:10px;height:10px;background:#e8841a;border-radius:50%"></div><div><div style="font-weight:600">Consumer</div><div style="color:#6b7280">$646K — 29.9%</div></div></div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:11px"><div style="width:10px;height:10px;background:#5fa8de;border-radius:50%"></div><div><div style="font-weight:600">Home Office</div><div style="color:#6b7280">$562K — 26.0%</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRENDS TAB -->
+  <div class="page" id="tab-trends">
+    <div class="grid-full">
+      <div class="card">
+        <h3>Chart 6 — Monthly Sales Trend with Forecast <span class="chart-type">LINE + FORECAST</span></h3>
+        <svg width="100%" height="220" viewBox="0 0 900 220" id="trend-svg"></svg>
+        <div style="display:flex;gap:16px;margin-top:8px;font-size:11px">
+          <div style="display:flex;align-items:center;gap:6px"><div style="width:20px;height:2px;background:#2d4a6b"></div>Actual Sales</div>
+          <div style="display:flex;align-items:center;gap:6px"><div style="width:20px;height:2px;background:#e8841a;border-top:2px dashed #e8841a"></div>Forecast</div>
+          <div style="display:flex;align-items:center;gap:6px"><div style="width:20px;height:2px;background:#22c55e"></div>Actual Profit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showTab(id, el) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  el.classList.add('active');
+}
+
+// Monthly data
+const months = ['Jan 21','Feb 21','Mar 21','Apr 21','May 21','Jun 21','Jul 21','Aug 21','Sep 21','Oct 21','Nov 21','Dec 21','Jan 22','Feb 22','Mar 22','Apr 22','May 22','Jun 22','Jul 22','Aug 22','Sep 22','Oct 22','Nov 22','Dec 22','Jan 23','Feb 23','Mar 23','Apr 23','May 23','Jun 23','Jul 23','Aug 23','Sep 23','Oct 23','Nov 23','Dec 23'];
+const salesData = [68178,44489,105673,47533,34106,34998,89237,70463,61341,51381,47461,55536,42218,108570,64499,76412,47525,36438,52813,61593,68624,72321,50865,74380,50425,98849,57241,35318,44823,36561,96518,40756,63930,36275,61371,75163];
+const profitData = [19,3071,3979,-3564,4712,872,13938,5844,11109,-1668,2443,5343,448,16061,12119,9793,9288,1401,4565,5531,5636,5892,913,-596,713,11240,7456,-1461,191,1709,7862,1748,7161,7332,7452,2145];
+// forecast 6 months
+const forecastSales = [82000,55000,110000,48000,38000,100000];
+const forecastMonths = ['Jan 24','Feb 24','Mar 24','Apr 24','May 24','Jun 24'];
+
+function drawDual() {
+  const svg = document.getElementById('dual-svg');
+  if (!svg) return;
+  const W=900,H=200,pad={top:20,right:60,bottom:30,left:60};
+  const iW=W-pad.left-pad.right, iH=H-pad.top-pad.bottom;
+  const sMax=Math.max(...salesData)*1.1;
+  const pMax=Math.max(...profitData)*1.2;
+  const pMin=Math.min(...profitData)*1.2;
+  const n=salesData.length;
+  const xS=i=>pad.left+i*iW/(n-1);
+  const yS=v=>pad.top+iH-(v/sMax)*iH;
+  const yP=v=>pad.top+iH-((v-pMin)/(pMax-pMin))*iH;
+  let html='';
+  // grid
+  for(let i=0;i<=3;i++){const y=pad.top+iH*i/3;html+=`<line x1="${pad.left}" y1="${y}" x2="${W-pad.right}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;}
+  // zero line for profit
+  const y0=yP(0); html+=`<line x1="${pad.left}" y1="${y0}" x2="${W-pad.right}" y2="${y0}" stroke="#fca5a5" stroke-width="1" stroke-dasharray="4,3"/>`;
+  // x labels
+  months.forEach((m,i)=>{if(i%6===0)html+=`<text x="${xS(i)}" y="${H-8}" text-anchor="middle" fill="#9ca3af" font-size="9">${m}</text>`;});
+  // sales area
+  const areaPath=`M ${xS(0)},${yS(salesData[0])} `+salesData.map((v,i)=>`L ${xS(i)},${yS(v)}`).join(' ')+` L ${xS(n-1)},${yS(0)} L ${xS(0)},${yS(0)} Z`;
+  html+=`<defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2d4a6b" stop-opacity=".25"/><stop offset="100%" stop-color="#2d4a6b" stop-opacity="0"/></linearGradient></defs>`;
+  html+=`<path d="${areaPath}" fill="url(#sg)"/>`;
+  // sales line
+  html+=`<path d="M `+salesData.map((v,i)=>`${xS(i)},${yS(v)}`).join(' L ')+`" fill="none" stroke="#2d4a6b" stroke-width="2"/>`;
+  // profit line
+  html+=`<path d="M `+profitData.map((v,i)=>`${xS(i)},${yP(v)}`).join(' L ')+`" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-dasharray="5,2"/>`;
+  // y axes labels
+  html+=`<text x="${pad.left-6}" y="${pad.top+4}" text-anchor="end" fill="#2d4a6b" font-size="9">$110K</text>`;
+  html+=`<text x="${pad.left-6}" y="${H-pad.bottom}" text-anchor="end" fill="#2d4a6b" font-size="9">$0</text>`;
+  html+=`<text x="${W-pad.right+6}" y="${pad.top+4}" text-anchor="start" fill="#22c55e" font-size="9">+$16K</text>`;
+  html+=`<text x="${W-pad.right+6}" y="${H-pad.bottom}" text-anchor="start" fill="#dc2626" font-size="9">-$4K</text>`;
+  svg.innerHTML=html;
+}
+
+function drawTrend() {
+  const svg = document.getElementById('trend-svg');
+  if (!svg) return;
+  const W=900,H=220,pad={top:20,right:30,bottom:30,left:55};
+  const iW=W-pad.left-pad.right, iH=H-pad.top-pad.bottom;
+  const allSales=[...salesData,...forecastSales];
+  const sMax=Math.max(...allSales)*1.1;
+  const total=allSales.length;
+  const xS=i=>pad.left+i*iW/(total-1);
+  const yS=v=>pad.top+iH-(v/sMax)*iH;
+  let html='';
+  for(let i=0;i<=4;i++){const y=pad.top+iH*i/4;html+=`<line x1="${pad.left}" y1="${y}" x2="${W-pad.right}" y2="${y}" stroke="#e5e7eb" stroke-width="1"/>`;html+=`<text x="${pad.left-6}" y="${y+4}" text-anchor="end" fill="#9ca3af" font-size="9">$${Math.round(sMax*(4-i)/4/1000)}K</text>`;}
+  const allM=[...months,...forecastMonths];
+  allM.forEach((m,i)=>{if(i%6===0)html+=`<text x="${xS(i)}" y="${H-8}" text-anchor="middle" fill="#9ca3af" font-size="9">${m}</text>`;});
+  // actual area
+  const aPath=`M ${xS(0)},${yS(salesData[0])} `+salesData.map((v,i)=>`L ${xS(i)},${yS(v)}`).join(' ')+` L ${xS(n-1)},${yS(0)} L ${xS(0)},${yS(0)} Z`;
+  html+=`<defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2d4a6b" stop-opacity=".2"/><stop offset="100%" stop-color="#2d4a6b" stop-opacity="0"/></linearGradient></defs>`;
+  html+=`<path d="${aPath}" fill="url(#tg)"/>`;
+  html+=`<path d="M `+salesData.map((v,i)=>`${xS(i)},${yS(v)}`).join(' L ')+`" fill="none" stroke="#2d4a6b" stroke-width="2.5"/>`;
+  // forecast
+  const fStart=salesData.length-1;
+  let fPath=`M ${xS(fStart)},${yS(salesData[fStart])}`;
+  forecastSales.forEach((v,i)=>{fPath+=` L ${xS(fStart+1+i)},${yS(v)}`;});
+  html+=`<path d="${fPath}" fill="none" stroke="#e8841a" stroke-width="2" stroke-dasharray="6,3"/>`;
+  // forecast band
+  forecastSales.forEach((v,i)=>{
+    const x=xS(fStart+1+i);
+    html+=`<line x1="${x}" y1="${yS(v*1.15)}" x2="${x}" y2="${yS(v*0.85)}" stroke="#e8841a" stroke-opacity=".2" stroke-width="8"/>`;
+  });
+  svg.innerHTML=html;
+}
+
+// Top N products
+const allProducts = [
+  {name:'Footwear',sales:162860},
+  {name:'Furnishings',sales:158397},
+  {name:'Bookcases',sales:158293},
+  {name:'Copiers',sales:157718},
+  {name:'Phones',sales:146768},
+  {name:'Workwear',sales:142714},
+  {name:'Art',sales:139613},
+  {name:'Outerwear',sales:138472},
+  {name:'Appliances',sales:137030},
+  {name:'Tables',sales:131174}
+];
+const colors=['#2d4a6b','#3b6ea5','#4a8cc4','#5fa8de','#7dc0ee','#e8841a','#f59e0b','#10b981','#8b5cf6','#ec4899'];
+
+function updateTopN(n) {
+  document.getElementById('topn-val').textContent=n;
+  const items=allProducts.slice(0,n);
+  const max=items[0].sales;
+  let html='';
+  items.forEach((p,i)=>{
+    const pct=Math.round(p.sales/max*100);
+    html+=`<div class="hbar-row"><div class="hbar-lbl" style="width:90px">${p.name}</div><div class="hbar-track"><div class="hbar-fill" style="width:${pct}%;background:${colors[i]}">$${(p.sales/1000).toFixed(0)}K</div></div></div>`;
+  });
+  document.getElementById('topn-bars').innerHTML=html;
+}
+
+function filterByYear(yr) {
+  const totals = {all:{s:2163905,p:170713},
+    '2021':{s:709702,p:67608},'2022':{s:775881,p:70058},'2023':{s:697322,p:33047}};
+  const d = totals[yr] || totals.all;
+  document.getElementById('s-sales').textContent='$'+(d.s/1000000).toFixed(2)+'M';
+  document.getElementById('s-profit').textContent='$'+(d.p/1000).toFixed(1)+'K';
+  document.getElementById('s-margin').textContent=(d.p/d.s*100).toFixed(1)+'%';
+}
+function filterByRegion(r){}
+function switchKPI(k){}
+
+// Init
+updateTopN(5);
+drawDual();
+drawTrend();
+const n = salesData.length;
+</script>
+</body>
+</html>
